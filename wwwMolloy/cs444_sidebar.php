@@ -4,9 +4,6 @@
             AI(Spring 2021) <br/>
             <!-- <?php echo getcwd() . "\n";  ?> -->
 
-	        <div class="bd-toc-item">
-                <?php echo '<a class="bd-toc-link" href="' . $cs4442021Spring . 'index.php">Main</a>' ; ?>
-            </div>
             <div class="bd-toc-item">
                 <?php echo '<a class="bd-toc-link" href="' . $cs4442021Spring . 'cs444_Calendar.php"> Calendar</a>' ; ?>
             </div>
