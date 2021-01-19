@@ -45,7 +45,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_1_4"></td>
     <td> <!-- Topics -->
-        <a href="BFS, DFS, IDS">Uninformed Search </a>
+        Uninformed Search - BFS, DFS, IDS
     </td>
     <td> <!-- Readings -->
         Chp 3.1 - 3.4.6
@@ -80,7 +80,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_2_2"></td>
     <td> <!-- Topics -->
-        <a href="A*, Graph Search">Informed Search</a>
+        Informed Search - A*, Graph Search
     </td>
     <td> <!-- Readings -->
         Chp 3.5 - end
@@ -573,3 +573,4 @@
     <td> <!-- Due -->
     </td>
 </tr>
+
