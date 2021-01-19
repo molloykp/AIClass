@@ -48,17 +48,18 @@
         <a href="BFS, DFS, IDS">Uninformed Search </a>
     </td>
     <td> <!-- Readings -->
-        <ul class="no_indent">
-            <li>
-                Chp 3.1 - 3.4.6
-            </li>
-            <li>
-                [Chp 3.1 - 3.4.7]
-            </li>
-        </ul>
+        Chp 3.1 - 3.4.6
     </td>
     <td> <!-- Assign/Lab -->
-        <a href="PAs/PA.php?paNumber=1">HW 1, PA 1</a>
+        <ul class="no_indent">
+            <li>
+                HW 1
+            </li>
+            <li>
+                <a href="PAs/PA.php?paNumber=1"> PA 1</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
@@ -572,4 +573,3 @@
     <td> <!-- Due -->
     </td>
 </tr>
-

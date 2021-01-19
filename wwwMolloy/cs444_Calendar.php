@@ -37,15 +37,13 @@
                     we will introduce new concepts and
                     methods.
                 </li>
-
                 <li>Read the assigned reading <strong> AFTER </strong>
                     class/lecture.  These readings will reinforce the topics
-                    from class.  Reading material marked with a "(S)" is supplemental
+                    from class.  Reading material marked with "[Sup]" is supplemental
                     and is encourgaged, but will not be covered on the quizzes.
-                </li>
-
-                <li> Weekly quizzes will test you on the prior 2 days of lecture.
-                </li>
+                    Reading is from Russell/Novig unless otherwise specified.</li>
+                <li>Master quizzes each week (with an oppurtunity to take a
+                requiz the following week)</li>
             </ul>
             </p>
             <script type="text/javascript"
