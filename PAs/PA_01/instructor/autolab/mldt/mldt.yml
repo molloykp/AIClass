@@ -1,0 +1,55 @@
+---
+general:
+  name: mldt
+  description: Submit 
+  display_name: PA 1 DecisionTree
+  handin_filename: decision_tree.py
+  handin_directory: handin
+  max_grace_days: 0
+  handout: ''
+  writeup: ''
+  max_submissions: 25
+  disable_handins: false
+  max_size: 1
+  category_name: PAs
+problems:
+- name: Impurity
+  description: the impurity utility function entropy calc
+  max_score: 3
+  optional: false
+- name: WeightedImpurity
+  description: Weighted value given 2 lists
+  max_score: 5
+  optional: false
+- name: TreeDepth0
+  description: The tree test in decision_tree_tests.py
+  max_score: 10
+  optional: false
+- name: TreeDepth03Class
+  description: test with 3 class just root
+  max_score: 5
+  optional: false
+- name: FullDepth
+  description: test making full depth tree
+  max_score: 5
+  optional: false
+- name: FullDepth3Class
+  description: test making full depth tree
+  max_score: 5
+  optional: false
+- name: Depth2Predictions
+  description: test with hidden data
+  max_score: 7
+  optional: false
+- name: Efficiency
+  description: tests the speed of your tree
+  max_score: 5
+  optional: false
+- name: HiddenTests
+  description: test with hidden data
+  max_score: 10
+  optional: false
+autograder:
+  autograde_timeout: 60
+  autograde_image: ay1920_python
+  release_score: true

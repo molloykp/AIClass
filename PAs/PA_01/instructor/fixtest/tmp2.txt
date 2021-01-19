@@ -1,0 +1,63 @@
+NODE: split dim: 2 split point: 0.5
+    NODE: split dim: 1 split point: 0.5
+        NODE: split dim: 16 split point: 0.5
+            NODE: split dim: 26 split point: 0.5
+                NODE: split dim: 7 split point: 0.5
+                    LEAF: 0.0
+                    LEAF: 1.0
+                NODE: split dim: 18 split point: 0.5
+                    LEAF: 0.0
+                    LEAF: 0.0
+            NODE: split dim: 20 split point: 0.5
+                NODE: split dim: 15 split point: 0.5
+                    LEAF: 0.0
+                    LEAF: 0.0
+                NODE: split dim: 5 split point: 0.5
+                    LEAF: 2.0
+                    LEAF: 3.0
+        NODE: split dim: 22 split point: 0.5
+            NODE: split dim: 20 split point: 0.5
+                NODE: split dim: 5 split point: 0.5
+                    LEAF: 0.0
+                    LEAF: 1.0
+                NODE: split dim: 17 split point: 0.5
+                    LEAF: 2.0
+                    LEAF: 3.0
+            NODE: split dim: 7 split point: 0.5
+                NODE: split dim: 14 split point: 0.5
+                    LEAF: 1.0
+                    LEAF: 1.0
+                NODE: split dim: 8 split point: 0.5
+                    LEAF: 1.0
+                    LEAF: 2.0
+    NODE: split dim: 16 split point: 0.5
+        NODE: split dim: 14 split point: 0.5
+            NODE: split dim: 7 split point: 0.5
+                NODE: split dim: 13 split point: 0.5
+                    LEAF: 1.0
+                    LEAF: 2.0
+                NODE: split dim: 15 split point: 0.5
+                    LEAF: 2.0
+                    LEAF: 1.0
+            NODE: split dim: 20 split point: 0.5
+                NODE: split dim: 15 split point: 0.5
+                    LEAF: 2.0
+                    LEAF: 2.0
+                NODE: split dim: 27 split point: 0.5
+                    LEAF: 2.0
+                    LEAF: 3.0
+        NODE: split dim: 7 split point: 0.5
+            NODE: split dim: 25 split point: 0.5
+                NODE: split dim: 24 split point: 0.5
+                    LEAF: 3.0
+                    LEAF: 3.0
+                NODE: split dim: 14 split point: 0.5
+                    LEAF: 1.0
+                    LEAF: 2.0
+            NODE: split dim: 1 split point: 0.5
+                NODE: split dim: 14 split point: 0.5
+                    LEAF: 1.0
+                    LEAF: 3.0
+                NODE: split dim: 4 split point: 0.5
+                    LEAF: 3.0
+                    LEAF: 3.0

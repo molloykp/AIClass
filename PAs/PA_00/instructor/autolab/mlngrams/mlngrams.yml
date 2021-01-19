@@ -1,0 +1,31 @@
+---
+general:
+  name: mlngrams
+  description: Submit PA 0
+  display_name: PA 0 NGrams
+  handin_filename: text_gen.py
+  handin_directory: handin
+  max_grace_days: 0
+  handout: ''
+  writeup: ''
+  max_submissions: 25
+  disable_handins: false
+  max_size: 1
+  category_name: PAs
+problems:
+- name: unigrams
+  description: Does random_bigram_text work correctly
+  max_score: 10
+  optional: false
+- name: bigrams
+  description: Build bigrams correctly
+  max_score: 50
+  optional: false
+- name: trigrams
+  description: trigram construction correct
+  max_score: 10
+  optional: false
+autograder:
+  autograde_timeout: 60
+  autograde_image: ay1920_python
+  release_score: true

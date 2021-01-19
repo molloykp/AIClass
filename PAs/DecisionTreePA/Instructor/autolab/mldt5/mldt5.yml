@@ -1,0 +1,35 @@
+---
+general:
+  name: mldt5
+  description: Submit 
+  display_name: Decision Tree
+  handin_filename: BinaryDT.py
+  handin_directory: handin
+  max_grace_days: 0
+  handout: ''
+  writeup: ''
+  max_submissions: 25
+  disable_handins: false
+  max_size: 1
+  category_name: PAs
+problems:
+- name: WineTestTree
+  description: Does your code construct the decision tree for the wine sample data
+  max_score: 30
+  optional: false
+- name: WineTestPredict
+  description: Does your predict function return the correct data for the wine sample data
+  max_score: 15
+  optional: false
+- name: HiddenTestTree
+  description: Does your code build the right data on the hidden dataset
+  max_score: 15
+  optional: false
+- name: HiddenTestPredict
+  description: Does your predict function operate correct on the hidden dataset
+  max_score: 15
+  optional: false
+autograder:
+  autograde_timeout: 60
+  autograde_image: ay1920_python
+  release_score: true
