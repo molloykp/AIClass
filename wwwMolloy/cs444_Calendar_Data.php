@@ -10,25 +10,20 @@
                 Intel Agents
             </li>
             <li>
-                <a href="slides/01_IntroAndAgents.pdf">slides</a>
+                <a href="slides/01_IntroAndAgents.pdf"> slides</a>
             </li>
             </li>
         </ul>
     </td>
     <td> <!-- Readings -->
-        <ul class="no_indent">
-            <li>
-                Chp 2
-            </li>
-            <li>
-                Chp 1 [Sup]
-            </li>
-        </ul>
     </td>
     <td> <!-- Assign/Lab -->
+        Chp 1, Chp 2
+    </td>
+    <td> <!-- Due -->
         <ul class="no_indent">
             <li>
-                <a href="hw/hw0/hw0.pdf">HW 0 </a>
+                <a href="hw/hw0.php">HW 0 </a>
             </li>
             </li>
             <li>
@@ -37,40 +32,40 @@
             </li>
         </ul>
     </td>
-    <td> <!-- Due -->
-    </td>
 </tr>
 
 <tr id="WeekRow_1_b" class="table-secondary">
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_1_4"></td>
     <td> <!-- Topics -->
-        Uninformed Search - BFS, DFS, IDS
+        <ul class="no_indent">
+            <li>
+                Uninformed Search BFS, DFS, IDS
+            </li>
+            <li>
+                <a href="slides/02_UninformedSearch.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
-        Chp 3.1 - 3.4.6
     </td>
     <td> <!-- Assign/Lab -->
         <ul class="no_indent">
             <li>
-                HW 1
+                Chp 3.1 - 3.4.6
             </li>
             <li>
-                <a href="PAs/PA.php?paNumber=1"> PA 1</a>
-            </li>
+                [Chp 3.1 - 3.4.7]
             </li>
         </ul>
     </td>
     <td> <!-- Due -->
-        <ul class="no_indent">
-            <li>
-                PA 0
-            </li>
-            <li>
-                <a href="mquizzes/mquiz0/mquiz0.php"> MQuiz 0</a>
-            </li>
-            </li>
-        </ul>
+        <a href="hw/hw1.php">HW 1 </a>
     </td>
 </tr>
 
@@ -80,15 +75,15 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_2_2"></td>
     <td> <!-- Topics -->
-        Informed Search - A*, Graph Search
+        <a href="A*, Graph Search">Informed Search</a>
     </td>
     <td> <!-- Readings -->
-        Chp 3.5 - end
     </td>
     <td> <!-- Assign/Lab -->
-
+        Chp 3.5 - end
     </td>
     <td> <!-- Due -->
+
     </td>
 </tr>
 
@@ -99,25 +94,19 @@
         Hill Climbers, Simulated Annealing
     </td>
     <td> <!-- Readings -->
-        Chp 4.1
     </td>
     <td> <!-- Assign/Lab -->
-        <ul class="no_indent">
-            <li>
-                HW 2
-            </li>
-            <li>
-                PA 2
-            </li>
-        </ul>
+        Chp 4.1
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
             <li>
-                HW 1
+                <a href="hw/hw2.php">HW 2 </a>
+            </li>
             </li>
             <li>
-                Quiz 1
+                <a href="PAS/PA.php?paNumber=2"> PA 2 </a>
+            </li>
             </li>
         </ul>
     </td>
@@ -134,10 +123,9 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-        HW 3
     </td>
     <td> <!-- Due -->
-        PA 1
+        <a href="hw/hw3.php">HW 3 </a>
     </td>
 </tr>
 
@@ -150,10 +138,9 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-
     </td>
     <td> <!-- Due -->
-        HW 2
+
     </td>
 </tr>
 
@@ -182,6 +169,8 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
+    </td>
+    <td> <!-- Due -->
         <ul class="no_indent">
             <li>
                 HW4
@@ -190,9 +179,6 @@
                 PA2
             </li>
         </ul>
-    </td>
-    <td> <!-- Due -->
-        HW 3
     </td>
 </tr>
 
@@ -223,7 +209,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        Quiz 3
     </td>
 </tr>
 
@@ -254,14 +239,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        <ul class="no_indent">
-            <li>
-                PA 2
-            </li>
-            <li>
-                Quiz 4
-            </li>
-        </ul>
     </td>
 </tr>
 
@@ -292,7 +269,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        Quiz 5
     </td>
 </tr>
 
@@ -302,7 +278,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_8_2"></td>
     <td> <!-- Topics -->
-        MDP Review/Lab
+        Reinforcement Learning 1
     </td>
     <td> <!-- Readings -->
     </td>
@@ -316,21 +292,13 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_8_4"></td>
     <td> <!-- Topics -->
-        Reinforcement Learning 1
+        Reinforcement Learning 2
     </td>
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        <ul class="no_indent">
-            <li>
-                PA 2
-            </li>
-            <li>
-                Quiz 6
-            </li>
-        </ul>
     </td>
 </tr>
 
@@ -340,7 +308,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_2"></td>
     <td> <!-- Topics -->
-        Reinforcement Learning 2
+        <a href="Theorem Proving">Prop Logic </a>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -354,7 +322,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_4"></td>
     <td> <!-- Topics -->
-        RL Lab
+        Agents using Prop Logic
     </td>
     <td> <!-- Readings -->
     </td>
@@ -370,7 +338,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_2"></td>
     <td> <!-- Topics -->
-        <a href="Theorem Proving">Prop Logic </a>
+        FOL, Unification
     </td>
     <td> <!-- Readings -->
     </td>
@@ -384,7 +352,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_4"></td>
     <td> <!-- Topics -->
-        Agents using Prop Logic
+        FOL Resolution and Chaining
     </td>
     <td> <!-- Readings -->
     </td>
@@ -400,7 +368,6 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_2"></td>
     <td> <!-- Topics -->
-        FOL, Unification
     </td>
     <td> <!-- Readings -->
     </td>
@@ -414,7 +381,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_4"></td>
     <td> <!-- Topics -->
-        FOL Resolution and Chaining
+        Prob
     </td>
     <td> <!-- Readings -->
     </td>
@@ -430,7 +397,6 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_12_2"></td>
     <td> <!-- Topics -->
-        Prob
     </td>
     <td> <!-- Readings -->
     </td>
@@ -550,7 +516,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_16_2"></td>
     <td> <!-- Topics -->
-        Bayes -- lab
+        slack
     </td>
     <td> <!-- Readings -->
     </td>
@@ -559,18 +525,3 @@
     <td> <!-- Due -->
     </td>
 </tr>
-
-<tr id="WeekRow_16_b" class="table-secondary">
-    <td id="WeekNoNumber"></td>
-    <td style="text-align: left" id="WeekRowDate_16_4"></td>
-    <td> <!-- Topics -->
-        Make up day
-    </td>
-    <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
-    </td>
-    <td> <!-- Due -->
-    </td>
-</tr>
-
