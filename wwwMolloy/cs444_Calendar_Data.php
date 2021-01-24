@@ -88,9 +88,10 @@
         Chp 3.5 - end
     </td>
     <td> <!-- Assign/Lab -->
-
+        HW 2
     </td>
     <td> <!-- Due -->
+        HW 1
     </td>
 </tr>
 
@@ -104,24 +105,12 @@
         Chp 4.1
     </td>
     <td> <!-- Assign/Lab -->
-        <ul class="no_indent">
-            <li>
-                <a href="hw/hw2.php">HW 2 </a>
-            </li>
-            </li>
-            <li>
-                <a href="PAS/PA.php?paNumber=2"> PA 2 </a>
-            </li>
-            </li>
-        </ul>
+        PA 2
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
             <li>
-                PA 1
-            </li>
-            <li>
-                HW 1
+                HW 2
             </li>
             <li>
                 Quiz 0
@@ -141,7 +130,7 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-        <a href="hw/hw3.php">HW 3 </a>
+        HW 3
     </td>
     <td> <!-- Due -->
     </td>
@@ -159,7 +148,7 @@
 
     </td>
     <td> <!-- Due -->
-        HW 2
+
     </td>
 </tr>
 
@@ -188,17 +177,8 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-        <ul class="no_indent">
-            <li>
-                HW4
-            </li>
-            <li>
-                PA2
-            </li>
-        </ul>
     </td>
     <td> <!-- Due -->
-        HW 3
     </td>
 </tr>
 
@@ -229,7 +209,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        Quiz 3
     </td>
 </tr>
 
@@ -260,14 +239,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        <ul class="no_indent">
-            <li>
-                PA 2
-            </li>
-            <li>
-                Quiz 4
-            </li>
-        </ul>
     </td>
 </tr>
 
@@ -298,7 +269,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        Quiz 5
     </td>
 </tr>
 
@@ -329,14 +299,6 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        <ul class="no_indent">
-            <li>
-                PA 2
-            </li>
-            <li>
-                Quiz 6
-            </li>
-        </ul>
     </td>
 </tr>
 
