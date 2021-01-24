@@ -16,11 +16,9 @@
         </ul>
     </td>
     <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
         Chp 1, Chp 2
     </td>
-    <td> <!-- Due -->
+    <td> <!-- Assign/Lab -->
         <ul class="no_indent">
             <li>
                 <a href="hw/hw0.php">HW 0 </a>
@@ -31,6 +29,8 @@
             </li>
             </li>
         </ul>
+    </td>
+    <td> <!-- Due -->
     </td>
 </tr>
 
@@ -50,8 +50,6 @@
         </ul>
     </td>
     <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
         <ul class="no_indent">
             <li>
                 Chp 3.1 - 3.4.6
@@ -61,7 +59,7 @@
             </li>
         </ul>
     </td>
-    <td> <!-- Due -->
+    <td> <!-- Assign/Lab -->
         <ul class="no_indent">
             <li>
                 <a href="hw/hw1.php">HW 1 </a>
@@ -72,6 +70,9 @@
             </li>
             </li>
         </ul>
+    </td>
+    <td> <!-- Due -->
+        PA 0
     </td>
 </tr>
 
@@ -84,12 +85,12 @@
         <a href="A*, Graph Search">Informed Search</a>
     </td>
     <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
         Chp 3.5 - end
     </td>
-    <td> <!-- Due -->
+    <td> <!-- Assign/Lab -->
 
+    </td>
+    <td> <!-- Due -->
     </td>
 </tr>
 
@@ -100,11 +101,9 @@
         Hill Climbers, Simulated Annealing
     </td>
     <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
         Chp 4.1
     </td>
-    <td> <!-- Due -->
+    <td> <!-- Assign/Lab -->
         <ul class="no_indent">
             <li>
                 <a href="hw/hw2.php">HW 2 </a>
@@ -113,6 +112,19 @@
             <li>
                 <a href="PAS/PA.php?paNumber=2"> PA 2 </a>
             </li>
+            </li>
+        </ul>
+    </td>
+    <td> <!-- Due -->
+        <ul class="no_indent">
+            <li>
+                PA 1
+            </li>
+            <li>
+                HW 1
+            </li>
+            <li>
+                Quiz 0
             </li>
         </ul>
     </td>
@@ -129,9 +141,9 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
+        <a href="hw/hw3.php">HW 3 </a>
     </td>
     <td> <!-- Due -->
-        <a href="hw/hw3.php">HW 3 </a>
     </td>
 </tr>
 
@@ -144,9 +156,10 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
+
     </td>
     <td> <!-- Due -->
-
+        HW 2
     </td>
 </tr>
 
@@ -175,8 +188,6 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-    </td>
-    <td> <!-- Due -->
         <ul class="no_indent">
             <li>
                 HW4
@@ -185,6 +196,9 @@
                 PA2
             </li>
         </ul>
+    </td>
+    <td> <!-- Due -->
+        HW 3
     </td>
 </tr>
 
@@ -215,6 +229,7 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
+        Quiz 3
     </td>
 </tr>
 
@@ -245,6 +260,14 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
+        <ul class="no_indent">
+            <li>
+                PA 2
+            </li>
+            <li>
+                Quiz 4
+            </li>
+        </ul>
     </td>
 </tr>
 
@@ -275,6 +298,7 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
+        Quiz 5
     </td>
 </tr>
 
@@ -305,6 +329,14 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
+        <ul class="no_indent">
+            <li>
+                PA 2
+            </li>
+            <li>
+                Quiz 6
+            </li>
+        </ul>
     </td>
 </tr>
 
