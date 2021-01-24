@@ -40,14 +40,11 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                Uninformed Search BFS, DFS, IDS
-            </li>
-            <li>
-                <a href="slides/02_UninformedSearch.pdf">slides</a>
+                <a href="BFS, DFS, IDS">Uninformed Search </a>
             </li>
             </li>
             <li>
-                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+                <a href="slides/02_UninformedSearch">slides</a>
             </li>
             </li>
         </ul>
@@ -65,7 +62,16 @@
         </ul>
     </td>
     <td> <!-- Due -->
-        <a href="hw/hw1.php">HW 1 </a>
+        <ul class="no_indent">
+            <li>
+                <a href="hw/hw1.php">HW 1 </a>
+            </li>
+            </li>
+            <li>
+                <a href="PAs/PA.php?paNumber=1"> PA 1</a>
+            </li>
+            </li>
+        </ul>
     </td>
 </tr>
 
