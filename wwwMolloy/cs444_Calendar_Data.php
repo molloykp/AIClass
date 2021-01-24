@@ -110,6 +110,9 @@
     <td> <!-- Due -->
         <ul class="no_indent">
             <li>
+                PA 1
+            </li>
+            <li>
                 HW 2
             </li>
             <li>
