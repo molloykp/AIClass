@@ -87,7 +87,7 @@
                 Informed Search = A* and Graph Search
             </li>
             <li>
-                <a href="slides/03_03_InformedSearch.pdf">slides</a>
+                <a href="slides/03_InformedSearch.pdf">slides</a>
             </li>
             </li>
         </ul>
