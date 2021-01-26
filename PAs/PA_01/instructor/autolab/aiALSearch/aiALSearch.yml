@@ -1,0 +1,51 @@
+---
+general:
+  name: aiALSearch
+  description: Submit pa1.zip
+  display_name: PA 1 Search
+  handin_filename: pa1.zip
+  handin_directory: handin
+  max_grace_days: 0
+  handout: ''
+  writeup: 'https://w3.cs.jmu.edu/molloykp/teaching/cs444/cs444_2021Spring/PAs/PA.php?paNumber=1'
+  max_submissions: 50
+  disable_handins: false
+  max_size: 1
+  category_name: PAs
+problems:
+- name: q1
+  description: dfs search for dot
+  max_score: 3
+  optional: false
+- name: q2
+  description: bfs
+  max_score: 3
+  optional: false
+- name: q3
+  description: varying cost search
+  max_score: 3
+  optional: false
+- name: q4
+  description: A star search
+  max_score: 3
+  optional: false
+- name: q5
+  description: find all the corners
+  max_score: 3
+  optional: false
+- name: q6
+  description: corners heuristic
+  max_score: 3
+  optional: false
+- name: q7
+  description: eat all dots
+  max_score: 4
+  optional: false
+- name: q8
+  description: suboptimal search
+  max_score: 3
+  optional: false
+autograder:
+  autograde_timeout: 180
+  autograde_image: ay2021_python
+  release_score: true
