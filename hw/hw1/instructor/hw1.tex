@@ -1,0 +1,130 @@
+%\documentclass[11pt,letterpaper]{article}
+\documentclass[11pt,letterpaper,addpoints]{exam}
+\usepackage[top=.6in,left=1.2in,right=1.2in,bottom=.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{nopageno}
+\usepackage{listings}
+\usepackage{ulem}
+\usepackage[pdftex]{graphicx}
+\usepackage{enumerate}
+\usepackage{array}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+    \usepackage[bottom]{footmisc}
+\usepackage{tcolorbox}
+\lstdefinestyle{basic}{
+    basicstyle=\small\ttfamily,%
+    frame=single,
+    showstringspaces=false,%
+}
+\lstset{
+    language=python,
+    basicstyle=\tt\small,
+    keepspaces=true,
+    showstringspaces=false,
+    frame=single,
+    emphstyle=\textit,
+    emph={val1,val2,val3,val4,val5},
+    numbers=left, stepnumber=1
+}
+%\printanswers
+
+
+
+%-----------------------------------
+\begin{document}
+%-----------------------------------
+\vspace*{-.5in}
+
+\hspace*{-.1in}Name: \vspace{.2in}\underline{ \hspace{2in} }
+\vspace{.25in}
+\begin{center}
+{\Large CS 444 HW 1} 
+\end{center}
+
+\begin{questions}
+
+\question How many nodes are in the complete search tree for the given state space graph?
+The start state is S.  Recommend drawing it and then counting the nodes.
+
+\begin{solutionorbox}[.5in]
+7.  See the figure.
+\end{solutionorbox}
+
+
+\question Depth-First Graph Search \\
+Consider a depth-first graph search on the graph below, where S is the start and G is the goal state.
+Assume that ties are broken alphabetically (so a partial plan S$\rightarrow$X$\rightarrow$A would be
+expanded before S$\rightarrow$X$\rightarrow$B and S$\rightarrow$B$\rightarrow$A
+
+\begin{parts}
+\part An agent that senses only partial information about the state cannot be perfectly rational.
+\begin{solutionorbox}[0.5 in]
+{\bf False}.  An agent that makes the best expected decision based on the precepts it receives is rational.
+\end{solutionorbox}
+
+
+\part The input to an agent program is the same as the input to the agent function.
+\begin{solutionorbox}[0.5 in]
+{\bf False}.  The agent function, notionally speaking, takes as input the entire percept sequence
+up to that point, whereas the agent program takes the current percept only.
+\end{solutionorbox}
+
+\part A perfectly rational poker playing agent never loses.
+\begin{solutionorbox}[0.5 in]
+{\bf False}.  Poker is nondeterministic (you do not know which cards will follow in the next state) and thus,
+the player can loss if when the actions performed have the highest {\bf expected}winning.  
+\end{solutionorbox}
+
+\end{parts}
+
+\pagebreak
+
+\question In your own words describe a reflex-based agent and a model-based agent.  Then, compare and
+contrast these agents and provide a scenario where a model-based agent would work and 
+a reflex-based agent would fail.
+\begin{solutionorbox}[1.0 in]
+{\it Reflex agent}: is an agent whose actions depends only on the current percept. \\
+{\it Model-based agent}: an agent whose action is derived directly from an internal 
+model of the current world state that is updated over time. \\
+Model-based agents are required for driving, since the actions of other cars can not be determined
+from a single frame of video (is the car moving towards us or away from us).  
+\end{solutionorbox}
+
+\question Given a computer with $n$ bits of storage, can you determine the maximum number of
+agent programs that can be constructed?  If so, how many.  
+\begin{solutionorbox}[1.0 in]
+You can create a maximum of $2^{n}$ programs (every possible setting).  Most likely the number
+would be smaller (for model-based agents, it would need to store some variables, etc).  This
+is a powerful fact about the limits of computability, since if we have more problems than programs, 
+some problems will not be computable.  
+\end{solutionorbox}
+
+
+
+\question List the properties (detailed in section 2.3.2 and Figure 2.6) for an agent you are designing
+to bid on items via an Internet auction site (think Ebay).  You can skip the known/unknown property.
+\begin{solutionorbox}[4.0 in]
+
+{\bf Observable}: Fully.  You can see the other agents bids (which are the only actions). \\
+{\bf Agents:}  Multi. More than one agent can bid on the same item. \\
+{\bf Deterministic}: Stochastic.  Your actions do not fully control the state of the world (as you do 
+not know if bidding a certain amount will or will not cause the other agents to bid a higher amount or
+give up). \\
+{\bf Episodic}: Sequential.  This could be argued either way.  In my opinion, it is sequential since
+your bid might depend on the sequence of prior bids. \\
+{\bf State}: Dynamic.  Another agent could bid while you are computing. \\
+{\bf Discrete}: This world is discrete since amounts (if expressed in pennies) are whole numbers. \\
+\end{solutionorbox}
+\end{questions}
+%-------------------------
+\end{document}
+%-------------------------
+
+
+
+
+
+
+

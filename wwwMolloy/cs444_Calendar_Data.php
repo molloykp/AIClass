@@ -62,7 +62,7 @@
     <td> <!-- Assign/Lab -->
         <ul class="no_indent">
             <li>
-                <a href="hw/hw1.php">HW 1 </a>
+                <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW 1 </a>
             </li>
             </li>
             <li>
@@ -82,13 +82,21 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_2_2"></td>
     <td> <!-- Topics -->
-        <a href="A*, Graph Search">Informed Search</a>
+        <ul class="no_indent">
+            <li>
+                Informed Search = A* and Graph Search
+            </li>
+            <li>
+                <a href="slides/03_03_InformedSearch.pdf">slides</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
         Chp 3.5 - end
     </td>
     <td> <!-- Assign/Lab -->
-        HW 2
+        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW 2 </a>
     </td>
     <td> <!-- Due -->
         HW 1
@@ -109,9 +117,6 @@
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
-            <li>
-                PA 1
-            </li>
             <li>
                 HW 2
             </li>
@@ -528,3 +533,4 @@
     <td> <!-- Due -->
     </td>
 </tr>
+
