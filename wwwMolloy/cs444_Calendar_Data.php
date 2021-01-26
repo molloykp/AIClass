@@ -47,6 +47,10 @@
                 <a href="slides/02_UninformedSearch">slides</a>
             </li>
             </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
         </ul>
     </td>
     <td> <!-- Readings -->
@@ -88,6 +92,10 @@
             </li>
             <li>
                 <a href="slides/03_InformedSearch.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
             </li>
             </li>
         </ul>
