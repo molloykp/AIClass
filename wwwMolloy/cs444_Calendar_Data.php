@@ -40,8 +40,7 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                <a href="BFS, DFS, IDS">Uninformed Search </a>
-            </li>
+                Uninformed Search BFS, DFS, IDS
             </li>
             <li>
                 <a href="slides/02_UninformedSearch">slides</a>
@@ -88,7 +87,7 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                Informed Search = A* and Graph Search
+                Informed Search  A* and Graph Search
             </li>
             <li>
                 <a href="slides/03_InformedSearch.pdf">slides</a>
@@ -115,13 +114,25 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_2_4"></td>
     <td> <!-- Topics -->
-        Hill Climbers, Simulated Annealing
+        <ul class="no_indent">
+            <li>
+                Hill Climbers, Simulated Annealing
+            </li>
+            <li>
+                <a href="slides/04_LocalSearch_EA_SA.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
         Chp 4.1
     </td>
     <td> <!-- Assign/Lab -->
-        PA 2
+        HW 3
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
@@ -129,7 +140,8 @@
                 HW 2
             </li>
             <li>
-                Quiz 0
+                <a href="mquizzes/mquiz0/mquiz0.php">Quiz 0</a>
+            </li>
             </li>
         </ul>
     </td>
@@ -146,7 +158,7 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-        HW 3
+        PA 2
     </td>
     <td> <!-- Due -->
     </td>
@@ -159,6 +171,7 @@
         CSPs 1
     </td>
     <td> <!-- Readings -->
+        Chp 6.1 - 6.3
     </td>
     <td> <!-- Assign/Lab -->
 
@@ -541,3 +554,4 @@
     <td> <!-- Due -->
     </td>
 </tr>
+
