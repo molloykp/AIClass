@@ -39,6 +39,9 @@
                 <li>Properties of breadth-first search(BFS)</li>
                 <li>Properties of depth-first search (DFS)</li>
                 <li>Properties of Iterative deepening search (IDS)</li>
+                <li>A* search</li>
+                <li>Uniform-cost search (UCS)</li>
+                <li>Greedy search</li>
             </ul>
         </main>
     </div>  <!-- content -->
