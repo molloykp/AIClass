@@ -168,7 +168,19 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_3_4"></td>
     <td> <!-- Topics -->
-        CSPs 1
+        <ul class="no_indent">
+            <li>
+                CSPs Part 1
+            </li>
+            <li>
+                <a href="slides/0505_CSP_Part1.pdf"> slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
         Chp 6.1 - 6.3
@@ -177,7 +189,15 @@
 
     </td>
     <td> <!-- Due -->
-
+        <ul class="no_indent">
+            <li>
+                Quiz 0 Retake
+            </li>
+            <li>
+                <a href="mquizzes/mquiz1/mquiz1.php">Quiz 1</a>
+            </li>
+            </li>
+        </ul>
     </td>
 </tr>
 
@@ -204,8 +224,17 @@
         CSPs 2
     </td>
     <td> <!-- Readings -->
+        Chp 6.4 - 6.5
     </td>
     <td> <!-- Assign/Lab -->
+        <ul class="no_indent">
+            <li>
+                PA 2
+            </li>
+            <li>
+                HW 3
+            </li>
+        </ul>
     </td>
     <td> <!-- Due -->
     </td>
@@ -554,4 +583,3 @@
     <td> <!-- Due -->
     </td>
 </tr>
-

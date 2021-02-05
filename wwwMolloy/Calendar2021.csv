@@ -4,9 +4,9 @@
 2,2,1,Informed Search  A* and Graph Search;slides(slides/03_InformedSearch.pdf) ;video(https://canvas.jmu.edu/courses/1775272/modules),Chp 3.5 - end,HW 2 (https://canvas.jmu.edu/courses/1775272/quizzes),HW 1
 2,4,2,"Hill Climbers, Simulated Annealing;slides(slides/04_LocalSearch_EA_SA.pdf);video(https://canvas.jmu.edu/courses/1775272/modules)",Chp 4.1,HW 3,HW 2;Quiz 0(mquizzes/mquiz0/mquiz0.php)
 3,2,1,Hill Climbers Lab,,PA 2,
-3,4,2,CSPs 1,Chp 6.1 - 6.3, , 
+3,4,2,CSPs Part 1; slides(slides/0505_CSP_Part1.pdf);video(https://canvas.jmu.edu/courses/1775272/modules),Chp 6.1 - 6.3, ,Quiz 0 Retake;Quiz 1(mquizzes/mquiz1/mquiz1.php)
 4,2,1,Assessment Day - No Class,,,
-4,4,2,CSPs 2,,,
+4,4,2,CSPs 2,Chp 6.4 - 6.5,PA 2; HW 3,
 5,2,1,CSP Lab,,,
 5,4,2,Adversarial Search -- Alpha/Beta Pruning,,,
 6,2,1,"Heuristic Alpha/Beta Search, Monte Carlo Search, Chance Trees",,,
