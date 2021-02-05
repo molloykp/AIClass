@@ -173,7 +173,7 @@
                 CSPs Part 1
             </li>
             <li>
-                <a href="slides/0505_CSP_Part1.pdf"> slides</a>
+                <a href="slides/05_CSP_Part1.pdf"> slides</a>
             </li>
             </li>
             <li>
