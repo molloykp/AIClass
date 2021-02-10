@@ -43,7 +43,7 @@
                 Uninformed Search BFS, DFS, IDS
             </li>
             <li>
-                <a href="slides/02_UninformedSearch">slides</a>
+                <a href="slides/02_UninformedSearch.pdf">slides</a>
             </li>
             </li>
             <li>
