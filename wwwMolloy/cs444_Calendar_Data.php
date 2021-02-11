@@ -132,7 +132,7 @@
         Chp 4.1
     </td>
     <td> <!-- Assign/Lab -->
-        HW 3
+        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW 3</a>
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
@@ -186,16 +186,12 @@
         Chp 6.1 - 6.3
     </td>
     <td> <!-- Assign/Lab -->
-
+        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW4</a>
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
             <li>
                 Quiz 0 Retake
-            </li>
-            <li>
-                <a href="mquizzes/mquiz1/mquiz1.php">Quiz 1</a>
-            </li>
             </li>
         </ul>
     </td>
@@ -221,22 +217,36 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_4_4"></td>
     <td> <!-- Topics -->
-        CSPs 2
+        <ul class="no_indent">
+            <li>
+                CSPs Part 2
+            </li>
+            <li>
+                <a href="slides/06_CSP_Part2.pdf"> slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
         Chp 6.4 - 6.5
     </td>
     <td> <!-- Assign/Lab -->
-        <ul class="no_indent">
-            <li>
-                PA 2
-            </li>
-            <li>
-                HW 3
-            </li>
-        </ul>
+        PA 2
     </td>
     <td> <!-- Due -->
+        <ul class="no_indent">
+            <li>
+                HW4
+            </li>
+            <li>
+                <a href="mquizzes/mquiz1/mquiz1.php">Quiz 1</a>
+            </li>
+            </li>
+        </ul>
     </td>
 </tr>
 
@@ -246,9 +256,10 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_5_2"></td>
     <td> <!-- Topics -->
-        CSP Lab
+        Adversarial Search -- Alpha/Beta Pruning
     </td>
     <td> <!-- Readings -->
+        Chp 5.1 - 5.4
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -260,9 +271,10 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_5_4"></td>
     <td> <!-- Topics -->
-        Adversarial Search -- Alpha/Beta Pruning
+        Heuristic Alpha/Beta Search, Monte Carlo Search, Chance Trees
     </td>
     <td> <!-- Readings -->
+        Chp 5.5 - 5.7
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -276,7 +288,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_6_2"></td>
     <td> <!-- Topics -->
-        Heuristic Alpha/Beta Search, Monte Carlo Search, Chance Trees
+        Chance Tree Lab
     </td>
     <td> <!-- Readings -->
     </td>
