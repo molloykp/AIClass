@@ -256,12 +256,25 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_5_2"></td>
     <td> <!-- Topics -->
-        Adversarial Search -- Alpha/Beta Pruning
+        <ul class="no_indent">
+            <li>
+                Adversarial Search -- Alpha/Beta Pruning
+            </li>
+            <li>
+                <a href="slides/07_AdversarialSearch.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
         Chp 5.1 - 5.4
     </td>
     <td> <!-- Assign/Lab -->
+        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW5</a>
     </td>
     <td> <!-- Due -->
     </td>
@@ -279,6 +292,7 @@
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
+        <a href="mquizzes/mquiz2/mquiz2.php">Quiz 2</a>
     </td>
 </tr>
 

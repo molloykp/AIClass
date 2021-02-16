@@ -7,8 +7,8 @@
 3,4,2,CSPs Part 1; slides(slides/05_CSP_Part1.pdf);video(https://canvas.jmu.edu/courses/1775272/modules),Chp 6.1 - 6.3,HW4(https://canvas.jmu.edu/courses/1775272/quizzes),Quiz 0 Retake;
 4,2,1,Assessment Day - No Class,,,
 4,4,2,CSPs Part 2; slides(slides/06_CSP_Part2.pdf);video(https://canvas.jmu.edu/courses/1775272/modules),Chp 6.4 - 6.5,PA 2,HW4;Quiz 1(mquizzes/mquiz1/mquiz1.php)
-5,2,1,Adversarial Search -- Alpha/Beta Pruning,Chp 5.1 - 5.4,,
-5,4,2,"Heuristic Alpha/Beta Search, Monte Carlo Search, Chance Trees",Chp 5.5 - 5.7,,
+5,2,1,Adversarial Search -- Alpha/Beta Pruning;slides(slides/07_AdversarialSearch.pdf);video(https://canvas.jmu.edu/courses/1775272/modules),Chp 5.1 - 5.4,HW5(https://canvas.jmu.edu/courses/1775272/quizzes),
+5,4,2,"Heuristic Alpha/Beta Search, Monte Carlo Search, Chance Trees",Chp 5.5 - 5.7,,Quiz 2(mquizzes/mquiz2/mquiz2.php)
 6,2,1,Chance Tree Lab,,,
 6,4,2,Review/Muddiest Points,,,
 7,2,1,Markov Decision Processes 1,,,
