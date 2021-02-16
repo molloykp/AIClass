@@ -158,7 +158,6 @@
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
-        PA 2
     </td>
     <td> <!-- Due -->
     </td>
@@ -235,7 +234,7 @@
         Chp 6.4 - 6.5
     </td>
     <td> <!-- Assign/Lab -->
-        PA 2
+        <a href="PAs/PA.php?paNumber=2">PA 2  </a>
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
