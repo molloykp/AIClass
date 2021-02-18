@@ -283,15 +283,42 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_5_4"></td>
     <td> <!-- Topics -->
-        Heuristic Alpha/Beta Search, Monte Carlo Search, Chance Trees
+        <ul class="no_indent">
+            <li>
+                Expectimax, Utility Functions
+            </li>
+            <li>
+                <a href="slides/08_ExpectimaxSearch.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
-        Chp 5.5 - 5.7
+        <ul class="no_indent">
+            <li>
+                Chp 5.5 - 5.7
+            </li>
+            <li>
+                Chp 16.1 - 16.3
+            </li>
+        </ul>
     </td>
     <td> <!-- Assign/Lab -->
     </td>
     <td> <!-- Due -->
-        <a href="mquizzes/mquiz2/mquiz2.php">Quiz 2</a>
+        <ul class="no_indent">
+            <li>
+                Quiz 1 Retake
+            </li>
+            <li>
+                <a href="mquizzes/mquiz2/mquiz2.php">Quiz 2</a>
+            </li>
+            </li>
+        </ul>
     </td>
 </tr>
 
@@ -608,3 +635,4 @@
     <td> <!-- Due -->
     </td>
 </tr>
+
