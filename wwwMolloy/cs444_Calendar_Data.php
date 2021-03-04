@@ -328,7 +328,18 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_6_2"></td>
     <td> <!-- Topics -->
-        Chance Tree Lab
+        <ul class="no_indent">
+            <li>
+                Chance Tree Lab
+            </li>
+            <li>
+                Review/Muddiest Points
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -342,13 +353,35 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_6_4"></td>
     <td> <!-- Topics -->
-        Review/Muddiest Points
+        <ul class="no_indent">
+            <li>
+                Markov Decision Processes 1
+            </li>
+            <li>
+                <a href="slides/09_MDP_Part1.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
+        Chp 17.1-17.3
     </td>
     <td> <!-- Assign/Lab -->
+        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW6</a>
     </td>
     <td> <!-- Due -->
+        <ul class="no_indent">
+            <li>
+                Quiz 2 Retake
+            </li>
+            <li>
+                PA2
+            </li>
+        </ul>
     </td>
 </tr>
 
@@ -358,7 +391,19 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_7_2"></td>
     <td> <!-- Topics -->
-        Markov Decision Processes 1
+        <ul class="no_indent">
+            <li>
+                Markov Decision Processes 2
+            </li>
+            <li>
+                <a href="slides/10_MDP_Part2.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -372,9 +417,10 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_7_4"></td>
     <td> <!-- Topics -->
-        Markov Decision Processes 2
+        Reinforcement Learning 1
     </td>
     <td> <!-- Readings -->
+        Chp 22
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -388,7 +434,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_8_2"></td>
     <td> <!-- Topics -->
-        Reinforcement Learning 1
+        Reinforcement Learning 2
     </td>
     <td> <!-- Readings -->
     </td>
@@ -402,7 +448,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_8_4"></td>
     <td> <!-- Topics -->
-        Reinforcement Learning 2
+        <a href="Theorem Proving">Prop Logic </a>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -418,7 +464,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_2"></td>
     <td> <!-- Topics -->
-        <a href="Theorem Proving">Prop Logic </a>
+        Agents using Prop Logic
     </td>
     <td> <!-- Readings -->
     </td>
@@ -432,7 +478,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_4"></td>
     <td> <!-- Topics -->
-        Agents using Prop Logic
+        FOL, Unification
     </td>
     <td> <!-- Readings -->
     </td>
@@ -448,7 +494,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_2"></td>
     <td> <!-- Topics -->
-        FOL, Unification
+        FOL Resolution and Chaining
     </td>
     <td> <!-- Readings -->
     </td>
@@ -462,7 +508,6 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_4"></td>
     <td> <!-- Topics -->
-        FOL Resolution and Chaining
     </td>
     <td> <!-- Readings -->
     </td>
@@ -478,6 +523,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_2"></td>
     <td> <!-- Topics -->
+        Prob
     </td>
     <td> <!-- Readings -->
     </td>
@@ -491,7 +537,6 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_4"></td>
     <td> <!-- Topics -->
-        Prob
     </td>
     <td> <!-- Readings -->
     </td>
@@ -507,6 +552,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_12_2"></td>
     <td> <!-- Topics -->
+        No Class Semester Break 3
     </td>
     <td> <!-- Readings -->
     </td>
@@ -520,7 +566,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_12_4"></td>
     <td> <!-- Topics -->
-        No Class Semester Break 3
+        Markov Models
     </td>
     <td> <!-- Readings -->
     </td>
@@ -536,7 +582,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_13_2"></td>
     <td> <!-- Topics -->
-        Markov Models
+        Hidden Markov Models
     </td>
     <td> <!-- Readings -->
     </td>
@@ -550,7 +596,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_13_4"></td>
     <td> <!-- Topics -->
-        Hidden Markov Models
+        Bayes - Representations
     </td>
     <td> <!-- Readings -->
     </td>
@@ -566,7 +612,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_2"></td>
     <td> <!-- Topics -->
-        Bayes - Representations
+        Bayes - Independence
     </td>
     <td> <!-- Readings -->
     </td>
@@ -580,7 +626,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_4"></td>
     <td> <!-- Topics -->
-        Bayes - Independence
+        Bayes - Inference
     </td>
     <td> <!-- Readings -->
     </td>
@@ -596,7 +642,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_15_2"></td>
     <td> <!-- Topics -->
-        Bayes - Inference
+        Bayes - Sampling
     </td>
     <td> <!-- Readings -->
     </td>
@@ -610,7 +656,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_15_4"></td>
     <td> <!-- Topics -->
-        Bayes - Sampling
+        slack
     </td>
     <td> <!-- Readings -->
     </td>
@@ -635,4 +681,3 @@
     <td> <!-- Due -->
     </td>
 </tr>
-
