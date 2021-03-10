@@ -333,9 +333,6 @@
                 Chance Tree Lab
             </li>
             <li>
-                Review/Muddiest Points
-            </li>
-            <li>
                 <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
             </li>
             </li>
@@ -355,11 +352,7 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                Markov Decision Processes 1
-            </li>
-            <li>
-                <a href="slides/09_MDP_Part1.pdf">slides</a>
-            </li>
+                Review/Muddiest Points
             </li>
             <li>
                 <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
@@ -368,10 +361,9 @@
         </ul>
     </td>
     <td> <!-- Readings -->
-        Chp 17.1-17.3
     </td>
     <td> <!-- Assign/Lab -->
-        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW6</a>
+
     </td>
     <td> <!-- Due -->
         <ul class="no_indent">
@@ -393,10 +385,95 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
+                Markov Decision Processes 1
+            </li>
+            <li>
+                <a href="slides/09_MDP_Part1.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
+    </td>
+    <td> <!-- Readings -->
+        Chp 17.1 - 17.2
+    </td>
+    <td> <!-- Assign/Lab -->
+    </td>
+    <td> <!-- Due -->
+    </td>
+</tr>
+
+<tr id="WeekRow_7_b" class="table-secondary">
+    <td id="WeekNoNumber"></td>
+    <td style="text-align: left" id="WeekRowDate_7_4"></td>
+    <td> <!-- Topics -->
+        <ul class="no_indent">
+            <li>
                 Markov Decision Processes 2
             </li>
             <li>
                 <a href="slides/10_MDP_Part2.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
+    </td>
+    <td> <!-- Readings -->
+        Chp 17.3
+    </td>
+    <td> <!-- Assign/Lab -->
+        <a href="https://canvas.jmu.edu/courses/1775272/quizzes">HW6</a>
+    </td>
+    <td> <!-- Due -->
+    </td>
+</tr>
+
+<tr class ="tbreak"> <td colspan="6" > </td ></tr>
+
+<tr id="WeekRow_8_a" class="table-primary">
+    <td id="WeekNumber"></td>
+    <td style="text-align: left" id="WeekRowDate_8_2"></td>
+    <td> <!-- Topics -->
+        <ul class="no_indent">
+            <li>
+                Reinforcement Learning 1
+            </li>
+            <li>
+                <a href="slides/11_RL_Part1.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
+    </td>
+    <td> <!-- Readings -->
+        Chp 22
+    </td>
+    <td> <!-- Assign/Lab -->
+        <a href="mquizzes/mquiz3/mquiz3.php">Quiz 3</a>
+    </td>
+    <td> <!-- Due -->
+    </td>
+</tr>
+
+<tr id="WeekRow_8_b" class="table-secondary">
+    <td id="WeekNoNumber"></td>
+    <td style="text-align: left" id="WeekRowDate_8_4"></td>
+    <td> <!-- Topics -->
+        <ul class="no_indent">
+            <li>
+                Reinforcement Learning 2
+            </li>
+            <li>
+                <a href="slides/12_RL_Part2.pdf">slides</a>
             </li>
             </li>
             <li>
@@ -413,60 +490,16 @@
     </td>
 </tr>
 
-<tr id="WeekRow_7_b" class="table-secondary">
-    <td id="WeekNoNumber"></td>
-    <td style="text-align: left" id="WeekRowDate_7_4"></td>
-    <td> <!-- Topics -->
-        Reinforcement Learning 1
-    </td>
-    <td> <!-- Readings -->
-        Chp 22
-    </td>
-    <td> <!-- Assign/Lab -->
-    </td>
-    <td> <!-- Due -->
-    </td>
-</tr>
-
-<tr class ="tbreak"> <td colspan="6" > </td ></tr>
-
-<tr id="WeekRow_8_a" class="table-primary">
-    <td id="WeekNumber"></td>
-    <td style="text-align: left" id="WeekRowDate_8_2"></td>
-    <td> <!-- Topics -->
-        Reinforcement Learning 2
-    </td>
-    <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
-    </td>
-    <td> <!-- Due -->
-    </td>
-</tr>
-
-<tr id="WeekRow_8_b" class="table-secondary">
-    <td id="WeekNoNumber"></td>
-    <td style="text-align: left" id="WeekRowDate_8_4"></td>
-    <td> <!-- Topics -->
-        <a href="Theorem Proving">Prop Logic </a>
-    </td>
-    <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
-    </td>
-    <td> <!-- Due -->
-    </td>
-</tr>
-
 <tr class ="tbreak"> <td colspan="6" > </td ></tr>
 
 <tr id="WeekRow_9_a" class="table-primary">
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_2"></td>
     <td> <!-- Topics -->
-        Agents using Prop Logic
+        Proposition Logic and Logical Agents
     </td>
     <td> <!-- Readings -->
+        Chp 7.1-7.4
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -478,9 +511,10 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_4"></td>
     <td> <!-- Topics -->
-        FOL, Unification
+        Theorm Proving and Resolution
     </td>
     <td> <!-- Readings -->
+        Chp 7.5
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -494,7 +528,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_2"></td>
     <td> <!-- Topics -->
-        FOL Resolution and Chaining
+        FOL, Unification
     </td>
     <td> <!-- Readings -->
     </td>
@@ -508,6 +542,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_4"></td>
     <td> <!-- Topics -->
+        FOL Resolution and Chaining
     </td>
     <td> <!-- Readings -->
     </td>
@@ -681,3 +716,4 @@
     <td> <!-- Due -->
     </td>
 </tr>
+
