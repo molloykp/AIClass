@@ -1,0 +1,236 @@
+<style>
+    table.table-bordered {
+        border:2px solid black;
+    }
+    table.table-bordered > tbody > tr > td{
+        border:2px solid black;
+    }
+</style>
+<h2> PA2: Map Coloring using Min Conflicts </h2>
+<p><img src="PA_02/USA4Color.png" alt="USA 4 Color" class="center-image img-fluid" style="width: 400px;" /></p>
+
+<h3> Learning Objectives </h3>
+<i>After completing this activity, students should be able to:</i>
+<ul>
+<li>
+   Implement a min-conflicts approach to map coloring (or in general,
+    binary constraints embedded within a graph).
+</li>
+<li>Analyze the statistical variance in solution
+times for the map coloring problem with
+an iterative/random approach</li>
+</ul>
+
+This assignment includes an <b>autograder</b>, which can be run on
+the Australia example using the following command (assuming your
+solution pickle file is named australia_solution.pickle):<pre><code>
+    python autograder.py --inputFile australia_mapcolor.csv --colorCount 3 --solutionFile australia_solution.pickle
+</code></pre>
+
+The autograder simply verifies that the assignment meets all the constraints.
+You can and should run the autograder on your solutions
+for the USA and tv show datasets.
+
+<h3>Partners</h3>
+This assignment may be completed individually or in pairs.
+<b>If you are doing this in pairs, you must notify me at the beginning
+of the project.</b>
+My expectation for pairs is that both members are
+actively involved, and take full responsibility for all aspects
+of the project.  In other words, I expect that you are either
+sitting or virtually together to work, and not that you are splitting
+up tasks to be completed separately.  If both members of the
+group are not able to fully explain the code to me, then
+this does not meet this expectation.
+
+
+
+<h3>Provided Files</h3>
+Download this zip archive <a href="PA_02/csp.zip">csp.zip</a> which contains all the
+code and supporting files.
+Here is a short summary of what is contained within the
+zip file:
+
+<table class="table-responsive-sm table-bordered">
+    <col style="width:20%">
+    <col style="width:80%">
+    <tbody>
+    <tr>
+        <td>pa2_csp.py</td>
+        <td>Where all of <b>your</b> csp algorithms will reside.</td>
+    </tr>
+
+    <tr>
+        <td>australia_mapcolor.csv</td>
+        <td>Input that allows you to test your method with the
+            map of Australia from the Russell/Norvig textbook.</td>
+    </tr>
+    <tr>
+        <td>usa_mapcolor.csv</td>
+        <td>Example input of a larger problem (US 50 states).</td>
+    </tr>
+    <tr>
+        <td>tvshow_edges.csv</td>
+        <td>An even larger input file where you will need to determine the
+            minimum number of colors required to color the graph
+            without violating the constraints (that 2 neighbors share the
+            same color).</td>
+    </tr>
+    </tbody>
+</table>
+
+<style>
+    code.hlr{font-size:95%;color:#e83e8c;word-break:break-word;border-radius:5px;border:1px solid;}
+</style>
+
+
+<h3>Submission and Policies</h3>
+
+You must submit the following files:
+<ul>
+    <li><code class="hlr">cs444_pa2_csp.py</code> to
+        <a href="https://autolab.cs.jmu.edu">Autolab</a>.
+    Your code should assign valid solutions and create validate solution
+    files for all 3 input files.  Autolab will use a few additional
+    hidden test cases to validate your program.
+    </li>
+    <li>A PDF report to Canvas that contains the following information:
+    <ul>
+        <li>A paragraph or two that describes how your program handles the
+        situation when it is not possible to color the map with the supplied
+        number of colors is too low.  To test this, try using the Australia example
+        with k = 2.</li>
+        <li>A paragraph that described how you determined the minimum number
+        of colors for the TV shows dataset and the value you found for
+            the minimum number of colors.  For example, "I was able
+        to color the TV Shows graph with 100 colors" (FYI, you
+        should be able to do it in less than 100). </li>
+        <li>An analysis of the runtime behavior.  Run your program 30 times
+        on the USA map coloring problem with k = 4.  Plot a histogram (the
+        same as the last assignment) that shows the distribution of the
+        number of iterations it took your program to find a solution.</li>
+    </ul>
+    </li>
+</ul>
+
+<p>
+    <b>Evaluation:</b>
+    Your code will be autograded for technical correctness. Please do not change the names of any
+    provided functions or classes within the code, or you will wreak havoc on the autograder. However,
+    the correctness of your implementation – not the autograder’s judgements –
+    will be the final judge of your score. If necessary, I will review and grade assignments individually
+    to ensure that you receive due credit for your work.
+</p>
+<p>
+<b>Academic Dishonesty</b>: Your code will be checked
+    against other submissions in the class for logical redundancy. If you copy someone else’s code and submit it with minor changes,
+    it will be detected. These cheat detectors are quite hard to fool, so please don’t try.
+    I trust you all to submit your own team's work; please don’t let us down.
+</p>
+<p>
+    <b>Getting Help:</b> You are not alone! If you find yourself stuck on something, contact me.
+    Office hours and Piazza discussion forum are there for your support; please use them.
+    If you can’t make office hours, let me know and I will schedule a meeting with you. I want these projects to be
+    rewarding and instructional, not frustrating and demoralizing.
+    But, I don’t know when or how to help unless you ask.
+</p>
+
+
+<hr/>
+
+<h2>Project Overview</h2>
+<div style="padding-left:2em;">
+    <p>
+    In this assignment, you will construct a python program that implements
+        the min-conflict algorithm to solve a map coloring problem.
+        You will be given a graph  <i>G=(V,E)</i> and
+        must find an assignment of colors such that
+        if two vertices are adjacent (an edge exists between them),
+        the vertices must not be assigned the same color.
+
+        </p>
+    <p>
+        The secondary objective of this assignment
+        is to find the minimum number of colors needed, <i>k</i>, in order to
+        not violate any of these constraints on the TV shows dataset.  This is known
+        as the <i>Chromatic Number</i> (Diaz, Zabala 1999).  For planar graphs,
+        there are some theories on the minimum number of colors you will need
+        (see informative section below).  However, for nonplanar graphs (such
+        as tvshow_edges.csv), you will need to explore different values of
+        k (the number of colors available).  This number and your technique must
+        be contained with the PDF you submit to Canvas.
+    </p>
+
+    <p> An <a href="https://mathigon.org/course/graph-theory/map-colouring">interactive application</a>
+        for solving this problem is available if you want to experiment with it.
+    </p>
+
+    <p>In designing your method, you will need to consider some questions that make
+        utilizing min-conflicts challenging.  Some of these questions may be
+        very graph/problem dependent, such as:
+    <ul>
+      <li>What happens in your method if you set <i>k</i> too small?</li>
+      <li>How will you determine the minimum setting of <i>k</i>?</li>
+    </ul>
+    </p>
+    <p>The starter code will read in the provided csv files into an  adjacency list
+        representation of a graph. The code also takes this representation and saves a
+        dictionary containing the solution to a file known as a
+        <a href="https://www.datacamp.com/community/tutorials/pickle-python-tutorial">python pickle</a>,
+        which provides a mechanism for object serialization.  The autograder reads this
+        pickle file and validates the solution is correct.
+    </p>
+
+    <p>
+        Submissions will be graded according to the following rubric:
+    </p>
+    <div class="row">
+        <div class="col-sm-6">
+    <table class="table table-responsive-sm  table-bordered">
+        <tr>
+            <td>Passes Unit Tests</td><td> 70%</td>
+        </tr>
+
+        <tr>
+            <td>Coding style</td>
+            <td>10% </td>
+        </tr>
+
+        <tr>
+            <td>PDF report contains the required
+            paragraphs on how your program addresses the
+            case when too few colors are specified, the number
+                of colors your solution found for the tvshows dataset, and also the
+            histogram plot.</td>
+            <td>20%</td>
+        </tr>
+    </table>
+    </div>
+    </div>
+
+</div>
+
+
+
+<h2>Theorem on Map Coloring</h2>
+<div style="padding-left:2em;">
+    <p>>
+        This section contains some supplemental information
+        about map coloring (in other words, this information is not strictly
+        needed to complete the proejct).
+        Considered to be the first major theorem to be proved using a computer, the
+        <a href="https://en.wikipedia.org/wiki/Four_color_theorem">four color theorem</a>
+        was published in 1977 by Appel and Haken.  The proof illustrates that
+        any planar graph (a graph that can be drawn in a plane such that its
+        edges intersect only at their endpoints/vertices) is 4 colorable.  Examples
+        of a planar and nonplanar graph are shown below.  The input to this project
+        will not necessarily be planar.
+    </p>
+    <p>
+    </p>
+</div>
+
+<div style="padding-left:2em;">
+<small>
+    This assignment was developed by Kevin Molloy.
+</small>

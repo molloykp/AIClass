@@ -496,10 +496,17 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_2"></td>
     <td> <!-- Topics -->
-        Proposition Logic and Logical Agents
+        <ul class="no_indent">
+            <li>
+                Reinforcement Learning 3
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
-        Chp 7.1-7.4
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -510,6 +517,41 @@
 <tr id="WeekRow_9_b" class="table-secondary">
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_9_4"></td>
+    <td> <!-- Topics -->
+        <ul class="no_indent">
+            <li>
+                <a href="slides/13_PropLogic.pdf">Proposition Logic and Logical Agentsslides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
+    </td>
+    <td> <!-- Readings -->
+        Chp 7.1-7.4
+    </td>
+    <td> <!-- Assign/Lab -->
+        <ul class="no_indent">
+            <li>
+                <a href="mquizzes/mquiz4/mquiz4.php">Quiz 4</a>
+            </li>
+            </li>
+            <li>
+                Quiz3 Retake
+            </li>
+        </ul>
+    </td>
+    <td> <!-- Due -->
+    </td>
+</tr>
+
+<tr class ="tbreak"> <td colspan="6" > </td ></tr>
+
+<tr id="WeekRow_10_a" class="table-primary">
+    <td id="WeekNumber"></td>
+    <td style="text-align: left" id="WeekRowDate_10_2"></td>
     <td> <!-- Topics -->
         Theorm Proving and Resolution
     </td>
@@ -522,27 +564,11 @@
     </td>
 </tr>
 
-<tr class ="tbreak"> <td colspan="6" > </td ></tr>
-
-<tr id="WeekRow_10_a" class="table-primary">
-    <td id="WeekNumber"></td>
-    <td style="text-align: left" id="WeekRowDate_10_2"></td>
-    <td> <!-- Topics -->
-        FOL, Unification
-    </td>
-    <td> <!-- Readings -->
-    </td>
-    <td> <!-- Assign/Lab -->
-    </td>
-    <td> <!-- Due -->
-    </td>
-</tr>
-
 <tr id="WeekRow_10_b" class="table-secondary">
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_4"></td>
     <td> <!-- Topics -->
-        FOL Resolution and Chaining
+        FOL, Unification
     </td>
     <td> <!-- Readings -->
     </td>
@@ -558,7 +584,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_2"></td>
     <td> <!-- Topics -->
-        Prob
+        FOL Resolution and Chaining
     </td>
     <td> <!-- Readings -->
     </td>
@@ -572,6 +598,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_4"></td>
     <td> <!-- Topics -->
+        Prob
     </td>
     <td> <!-- Readings -->
     </td>
@@ -716,4 +743,3 @@
     <td> <!-- Due -->
     </td>
 </tr>
-
