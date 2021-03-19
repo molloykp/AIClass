@@ -27,15 +27,17 @@
                 </div>
             </div> <!-- jumbotron -->
 
-            <h3> Mastery Quiz 3  </h3>
+            <h3> Mastery Quiz 4  </h3>
             The following material will be on this mastery quiz:
             <ul>
-                <li>Markov Decision Processes</li>
+                <li>Reinforcement Learning</li>
                 <ul>
-                    <li>Value Iteration</li>
-                    <li>Policy Evaluation</li>
-                    <li>Policy Impprovement</li>
-                    <li>Discounting Rewards</li>
+                    <li>Model-based and Model-free learning</li>
+                    <li>Temoporal Learning</li>
+                    <li>Q-Learning</li>
+                    <li>Approximate Q-Learning with features</li>
+                    <li>Exploration vs Exploitation</li>
+                    <li>Epislon-greedy and exploration functions </li>
                 </ul>
             </ul>
         </main>

@@ -520,7 +520,10 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                <a href="slides/13_PropLogic.pdf">Proposition Logic and Logical Agentsslides</a>
+                Proposition Logic and Logical Agents
+            </li>
+            <li>
+                <a href="slides/13_PropLogic.pdf">slides</a>
             </li>
             </li>
             <li>
