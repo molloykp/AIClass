@@ -556,7 +556,19 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_2"></td>
     <td> <!-- Topics -->
-        Theorm Proving and Resolution
+        <ul class="no_indent">
+            <li>
+                Theorm Proving and Resolution
+            </li>
+            <li>
+                <a href="slides/14_PropLogic_Part2.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
         Chp 7.5
@@ -571,9 +583,22 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_10_4"></td>
     <td> <!-- Topics -->
-        FOL, Unification
+        <ul class="no_indent">
+            <li>
+                FOL, Unification
+            </li>
+            <li>
+                <a href="slides/15_FOL_Part1.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
+        Chp 8.1 - 8.2
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -587,9 +612,22 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_2"></td>
     <td> <!-- Topics -->
-        FOL Resolution and Chaining
+        <ul class="no_indent">
+            <li>
+                FOL Chaining and Resolution
+            </li>
+            <li>
+                <a href="slides/16_FOL_Part2.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
+        Chp 8.3
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -601,7 +639,19 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_11_4"></td>
     <td> <!-- Topics -->
-        Prob
+        <ul class="no_indent">
+            <li>
+                Probability Review/Lab
+            </li>
+            <li>
+                <a href="slides/17_Probability.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -631,7 +681,20 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_12_4"></td>
     <td> <!-- Topics -->
-        Markov Models
+        <ul class="no_indent">
+            <li>
+                <a href="continued">Probability Review </a>
+            </li>
+            </li>
+            <li>
+                <a href="slides/17_Probability.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -647,9 +710,10 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_13_2"></td>
     <td> <!-- Topics -->
-        Hidden Markov Models
+        Bayes - Representations
     </td>
     <td> <!-- Readings -->
+        Chp 12
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -661,7 +725,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_13_4"></td>
     <td> <!-- Topics -->
-        Bayes - Representations
+        Bayes - Independence
     </td>
     <td> <!-- Readings -->
     </td>
@@ -677,7 +741,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_2"></td>
     <td> <!-- Topics -->
-        Bayes - Independence
+        Bayes - Inference
     </td>
     <td> <!-- Readings -->
     </td>
@@ -691,7 +755,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_4"></td>
     <td> <!-- Topics -->
-        Bayes - Inference
+        Bayes - Sampling
     </td>
     <td> <!-- Readings -->
     </td>
@@ -707,7 +771,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_15_2"></td>
     <td> <!-- Topics -->
-        Bayes - Sampling
+        HMM
     </td>
     <td> <!-- Readings -->
     </td>
