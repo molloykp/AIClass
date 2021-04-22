@@ -614,14 +614,14 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                FOL Chaining and Resolution
+                FOL Resolution and Chaining
             </li>
             <li>
                 <a href="slides/16_FOL_Part2.pdf">slides</a>
             </li>
             </li>
             <li>
-                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
             </li>
             </li>
         </ul>
@@ -648,7 +648,7 @@
             </li>
             </li>
             <li>
-                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
             </li>
             </li>
         </ul>
@@ -683,15 +683,14 @@
     <td> <!-- Topics -->
         <ul class="no_indent">
             <li>
-                <a href="continued">Probability Review </a>
-            </li>
+                Probability Review/Lab
             </li>
             <li>
                 <a href="slides/17_Probability.pdf">slides</a>
             </li>
             </li>
             <li>
-                <a href="https://canvas.jmu.edu/courses/1775272/modules">video</a>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
             </li>
             </li>
         </ul>
@@ -710,10 +709,9 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_13_2"></td>
     <td> <!-- Topics -->
-        Bayes - Representations
+        Bayes Representations
     </td>
     <td> <!-- Readings -->
-        Chp 12
     </td>
     <td> <!-- Assign/Lab -->
     </td>
@@ -725,7 +723,19 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_13_4"></td>
     <td> <!-- Topics -->
-        Bayes - Independence
+        <ul class="no_indent">
+            <li>
+                Bayes - Representations
+            </li>
+            <li>
+                <a href="slides/18_Prob_Reasoning.pdf">slides</a>
+            </li>
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
     </td>
@@ -741,7 +751,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_2"></td>
     <td> <!-- Topics -->
-        Bayes - Inference
+        Bayes InClass Lab
     </td>
     <td> <!-- Readings -->
     </td>
@@ -755,11 +765,12 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_4"></td>
     <td> <!-- Topics -->
-        Bayes - Sampling
+        MDP Lab PA3
     </td>
     <td> <!-- Readings -->
     </td>
     <td> <!-- Assign/Lab -->
+        <a href="PAs/PA.php?paNumber=3">PA 3  </a>
     </td>
     <td> <!-- Due -->
     </td>
@@ -771,7 +782,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_15_2"></td>
     <td> <!-- Topics -->
-        HMM
+        Review of Muddiest Points PA3 work
     </td>
     <td> <!-- Readings -->
     </td>
@@ -785,7 +796,7 @@
     <td id="WeekNoNumber"></td>
     <td style="text-align: left" id="WeekRowDate_15_4"></td>
     <td> <!-- Topics -->
-        slack
+        Bayes - Sampling
     </td>
     <td> <!-- Readings -->
     </td>
@@ -801,7 +812,7 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_16_2"></td>
     <td> <!-- Topics -->
-        slack
+        <a href="Retake 2 MQ">Exam </a>
     </td>
     <td> <!-- Readings -->
     </td>

@@ -6,30 +6,17 @@
         border:2px solid black;
     }
 </style>
-<h2> PA2: Map Coloring using Min Conflicts </h2>
-<p><img src="PA_02/USA4Color.png" alt="USA 4 Color" class="center-image img-fluid" style="width: 400px;" /></p>
+<h2> PA3: Reinforcement Learning </h2>
 
 <h3> Learning Objectives </h3>
 <i>After completing this activity, students should be able to:</i>
 <ul>
 <li>
-   Implement a min-conflicts approach to map coloring (or in general,
-    binary constraints embedded within a graph).
+  Utilize bellman equations and q-learning to build a
+  reinforcement learning apporach
 </li>
-<li>Analyze the statistical variance in solution
-times for the map coloring problem with
-an iterative/random approach</li>
 </ul>
 
-This assignment includes an <b>autograder</b>, which can be run on
-the Australia example using the following command (assuming your
-solution pickle file is named australia_solution.pickle):<pre><code>
-    python autograder.py --inputFile australia_mapcolor.csv --colorCount 3 --solutionFile australia_solution.pickle
-</code></pre>
-
-The autograder simply verifies that the assignment meets all the constraints.
-You can and should run the autograder on your solutions
-for the USA and tv show datasets.
 
 <h3>Partners</h3>
 This assignment may be completed individually or in pairs.
@@ -44,37 +31,95 @@ group are not able to fully explain the code to me, then
 this does not meet this expectation.
 
 
-
 <h3>Provided Files</h3>
-Download this zip archive <a href="PA_02/csp.zip">csp.zip</a> which contains all the
+Download this zip archive <a href="PA_03/pa3.zip">csp.zip</a> which contains all the
 code and supporting files.
 Here is a short summary of what is contained within the
 zip file:
-
 <table class="table-responsive-sm table-bordered">
     <col style="width:20%">
     <col style="width:80%">
     <tbody>
     <tr>
-        <td>pa2_csp.py</td>
-        <td>Where all of <b>your</b> csp algorithms will reside.</td>
+        <td colspan="2"><b>Files you will edit:</b></td>
+    </tr>
+    <tr>
+        <td>valueIterationAgents.py</td>
+        <td>A value iteration agent for solving known MDPs</td>
+    </tr>
+    <tr>
+        <td>(NOT FOR THIS LAB)qlearningAgents.py</td>
+        <td>Q-learning agents for Gridfworld and Crawler.</td>
+    </tr>
+    <tr>
+        <td>(NOT FOR THIS LAB) analysis.py</td>
+        <td>A place to put your answers.</td>
     </tr>
 
     <tr>
-        <td>australia_mapcolor.csv</td>
-        <td>Input that allows you to test your method with the
-            map of Australia from the Russell/Norvig textbook.</td>
+        <td colspan="2"><b>Files you might want to look at:</b></td>
     </tr>
     <tr>
-        <td>usa_mapcolor.csv</td>
-        <td>Example input of a larger problem (US 50 states).</td>
+        <td>mdp.py</td>
+        <td>Defines methods on general MDPs.</td>
     </tr>
     <tr>
-        <td>tvshow_edges.csv</td>
-        <td>An even larger input file where you will need to determine the
-            minimum number of colors required to color the graph
-            without violating the constraints (that 2 neighbors share the
-            same color).</td>
+        <td>learningAgents.py</td>
+        <td>Defines the base classes for <i>ValueEstimationAgent</i>
+        and <i>QLearningAgent</i>, whch your agents will extend</td>
+    </tr>
+    <tr>
+        <td>util.py</td>
+        <td>Utilities, including <i>util.Counter</i>, which is
+        particularly useful for Q-learners</td>
+    </tr>
+    <tr>
+        <td>gridworld.py</td>
+        <td>The gridworld implementation</td>
+    </tr>
+    <tr>
+        <td>featureExtractors.py</td>
+        <td>Classes for extracting features on (state, action) pairs.
+        Used for the approximate Q-learning agent (in
+        <i>qlearningAgents.py</i></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><b>Support files you can ignore:</b></td>
+    </tr>
+    <tr>
+        <td>environment.py</td>
+        <td>Abstract class for general reinforcement learning environments.
+        Used by <i>gridworld</i></td>
+    </tr>
+    <tr>
+        <td>graphicsGridworldDisplay.py</td>
+        <td>Gridworld graphical display</td>
+    </tr>
+    <tr>
+        <td>graphicsUtil.py.py</td>
+        <td>Graphic utility</td>
+    </tr>
+    <tr>
+        <td>textGridworldDisplay</td>
+        <td>plug-in for the gridworld text interface</td>
+    </tr>
+    <tr>
+        <td>crawler.py</td>
+        <td>The crawler code and test harness.  You will run this but do NOT edit.</td>
+    </tr>
+    <tr>
+        <td>graphicsCrawlerDisplay.py</td>
+        <td>GUI for the crawler robot</td>
+    </tr>
+    <tr>
+        <td>autograder.py</td>
+        <td>Project autograder</td>
+    </tr>
+    <tr>
+        <td>testParser.py</td>
+        <td>Parses autograder test and solution files</td>
+
     </tr>
     </tbody>
 </table>
@@ -83,33 +128,38 @@ zip file:
     code.hlr{font-size:95%;color:#e83e8c;word-break:break-word;border-radius:5px;border:1px solid;}
 </style>
 
+<h3> Value Iteration</h3>
+Recall that the value iteration state update equation is:
+<p>
+<img width="400" src="PA_03/bellman2.png">
+</p>
+Write a value iteration agent in ValueIterationAgent, which has been partially specified for you in
+valueIterationAgents.py. Your value iteration agent is an offline planner, not a reinforcement
+learning agent, and so the relevant training option is the number of iterations of value iteration it
+should run (option -i) in its initial planning phase.
+ValueIterationAgent takes an MDP on construction and runs value iteration for the specified
+number of iterations before the constructor returns.
+
+Value iteration computes k-step estimates of the optimal values,V-k. In addition to running
+value iteration, implement the following methods for ValueIterationAgent using Vk.
+<ul>
+    <li>computeActionFromValues(state) computes the best action according to the value function
+        given by self.values.
+    </li>
+    <li>computeQValueFromValues(state, action) returns the Q-value of the (state, action)
+        pair given by the value function given by self.values.
+    </li>
+</ul>
+
+These quantities are all displayed in the GUI: values are numbers in squares, Q-values are numbers in
+square quarters, and policies are arrows out from each square.
+
 
 <h3>Submission and Policies</h3>
 
 You must submit the following files:
 <ul>
-    <li><code class="hlr">cs444_pa2_csp.py</code> to
-        <a href="https://autolab.cs.jmu.edu">Autolab</a>.
-    Your code should assign valid solutions and create validate solution
-    files for all 3 input files.  Autolab will use a few additional
-    hidden test cases to validate your program.
-    </li>
-    <li>A PDF report to Canvas that contains the following information:
-    <ul>
-        <li>A paragraph or two that describes how your program handles the
-        situation when it is not possible to color the map with the supplied
-        number of colors is too low.  To test this, try using the Australia example
-        with k = 2.</li>
-        <li>A paragraph that described how you determined the minimum number
-        of colors for the TV shows dataset and the value you found for
-            the minimum number of colors.  For example, "I was able
-        to color the TV Shows graph with 100 colors" (FYI, you
-        should be able to do it in less than 100). </li>
-        <li>An analysis of the runtime behavior.  Run your program 30 times
-        on the USA map coloring problem with k = 4.  Plot a histogram (the
-        same as the last assignment) that shows the distribution of the
-        number of iterations it took your program to find a solution.</li>
-    </ul>
+    <li><code class="hlr">ValueIterationAgents.py</code> to Canvas .
     </li>
 </ul>
 
@@ -141,46 +191,80 @@ You must submit the following files:
 <h2>Project Overview</h2>
 <div style="padding-left:2em;">
     <p>
-    In this assignment, you will construct a python program that implements
-        the min-conflict algorithm to solve a map coloring problem.
-        You will be given a graph  <i>G=(V,E)</i> and
-        must find an assignment of colors such that
-        if two vertices are adjacent (an edge exists between them),
-        the vertices must not be assigned the same color.
+    <h3> MDPs</h3>
+    <div style="padding-left:2em;">
+        <p>
+            You will implement the <b>value iteration</b> algorithm and
+            test it in the gridworld setting discussed in class.  For part 1,
+            you will need to modify <code class="hlr">valueIterationAgents.py</code> and
+            implement the following methods:
+            <ul>
+                <li>runValueIteration.  This method is
+                called from the constructor.  You should use the
+                computeQValuesFromValues in this method.</li>
+                <li>computeQValueFromValues</li>
+                <li>computeActionFromValues</li>
+            </ul>
 
+            Recall that value iteration state update equation is:
+              <p>
+                  <img src="PA_03/bellman2.png" alt="Bellman2"
+                       class="center-image img-fluid" style="width: 400px;" />
+              </p>
+            More information is available on these equations from
+            the textbook (Chapter 17) and the class slides.  When implementing
+            value iteration, you are only being asked to run for the number
+            of iterations (so, do not run until convergence).  You should also
+            look at the __init__ method, as it shows some VERY useful
+            methods within the self.mdp object that you will need for these
+            methods.
+            For this part, it is an offline planener (does not use RL).
+            The number of iterations to run value iteration is an argument (specified via the
+            <code class="hlr">-i</code> command option) and stored within self.iteration
+            in the ValueIterationAgent class.  The following descriptions
+        are provided for V<sub>k</sub>.
+
+            <p>
+                <br/>
+                <i>Important:</i> Use the “batch” version of value iteration where each vector Vk is computed from
+                a fixed vector V(k-1) (like in lecture), not the “online” version where one single weight
+                vector is updated in place. This means that when a state’s value is updated in iteration
+                k based on the values of its successor states, the successor state values used in the value
+                update computation should be those from iteration k − 1
+                (even if some of the successor states had already been updated in iteration k
+                ).
+
+                Note: A policy synthesized from values of depth k (which reflect the next k rewards) will actually reflect
+                the next k + 1 rewards (i.e. you return π(k+1).
+                Similarly, the Q-values will also reflect one more reward than the values (i.e. you return
+                Q(k+1).
+
+                You should return the synthesized policy π(k+1).
+
+                Hint: You may optionally use the util.Counter class in util.py, which is a dictionary with a default value of zero. However, be careful with argMax: the actual argmax you want may be a key not in the counter!
+
+                Note: Make sure to handle the case when a state has no available actions
+                in an MDP (think about what this means for future rewards).
+
+                To test your implementation, run the autograder:
+        <pre><code>python gridworld.py -a value -i 100 -k 10</code></pre>
+
+        The following command loads your ValueIterationAgent, which will compute a policy and execute it
+        10 times. Press a key to cycle through values, Q-values, and the simulation. You should find that
+        the value of the start state (V(start), which you can read off of the GUI) and the empirical
+        resulting average reward (printed after the 10 rounds of execution finish) are quite close.
+        <pre><code>python autograder.py -q q1</code></pre>
+
+        Hint:  On the default grid, running value iterations for 5 iterations should give you this output:
+        <pre><code>python gridworld.py -a value -i 5</code></pre>
         </p>
-    <p>
-        The secondary objective of this assignment
-        is to find the minimum number of colors needed, <i>k</i>, in order to
-        not violate any of these constraints on the TV shows dataset.  This is known
-        as the <i>Chromatic Number</i> (Diaz, Zabala 1999).  For planar graphs,
-        there are some theories on the minimum number of colors you will need
-        (see informative section below).  However, for nonplanar graphs (such
-        as tvshow_edges.csv), you will need to explore different values of
-        k (the number of colors available).  This number and your technique must
-        be contained with the PDF you submit to Canvas.
-    </p>
-
-    <p> An <a href="https://mathigon.org/course/graph-theory/map-colouring">interactive application</a>
-        for solving this problem is available if you want to experiment with it.
-    </p>
-
-    <p>In designing your method, you will need to consider some questions that make
-        utilizing min-conflicts challenging.  Some of these questions may be
-        very graph/problem dependent, such as:
-    <ul>
-      <li>What happens in your method if you set <i>k</i> too small?</li>
-      <li>How will you determine the minimum setting of <i>k</i>?</li>
-    </ul>
-    </p>
-    <p>The starter code will read in the provided csv files into an  adjacency list
-        representation of a graph. The code also takes this representation and saves a
-        dictionary containing the solution to a file known as a
-        <a href="https://www.datacamp.com/community/tutorials/pickle-python-tutorial">python pickle</a>,
-        which provides a mechanism for object serialization.  The autograder reads this
-        pickle file and validates the solution is correct.
-    </p>
-
+        <p>
+            <img width="400" src="PA_03/mdp_gridWorldAfter5.png">
+        </p>
+    </div>
+        <p>
+        </p>
+    </div>
     <p>
         Submissions will be graded according to the following rubric:
     </p>
@@ -188,7 +272,7 @@ You must submit the following files:
         <div class="col-sm-6">
     <table class="table table-responsive-sm  table-bordered">
         <tr>
-            <td>Passes Unit Tests</td><td> 70%</td>
+            <td>Passes Unit Tests</td><td> 90%</td>
         </tr>
 
         <tr>
@@ -196,14 +280,6 @@ You must submit the following files:
             <td>10% </td>
         </tr>
 
-        <tr>
-            <td>PDF report contains the required
-            paragraphs on how your program addresses the
-            case when too few colors are specified, the number
-                of colors your solution found for the tvshows dataset, and also the
-            histogram plot.</td>
-            <td>20%</td>
-        </tr>
     </table>
     </div>
     </div>
@@ -212,25 +288,10 @@ You must submit the following files:
 
 
 
-<h2>Theorem on Map Coloring</h2>
-<div style="padding-left:2em;">
-    <p>>
-        This section contains some supplemental information
-        about map coloring (in other words, this information is not strictly
-        needed to complete the proejct).
-        Considered to be the first major theorem to be proved using a computer, the
-        <a href="https://en.wikipedia.org/wiki/Four_color_theorem">four color theorem</a>
-        was published in 1977 by Appel and Haken.  The proof illustrates that
-        any planar graph (a graph that can be drawn in a plane such that its
-        edges intersect only at their endpoints/vertices) is 4 colorable.  Examples
-        of a planar and nonplanar graph are shown below.  The input to this project
-        will not necessarily be planar.
-    </p>
-    <p>
-    </p>
-</div>
 
 <div style="padding-left:2em;">
 <small>
-    This assignment was developed by Kevin Molloy.
+    This assignment was developed at the UC-Berkeley by Dan Klein and John
+    DeNero with autograding support from  Brad Miller, Nick Hay, and
+    Pieter Abbeel.
 </small>

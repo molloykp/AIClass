@@ -51,7 +51,7 @@
             </script>
 
             <script>
-                var semesterStartDate= new Date(2021,00,18);
+                var semesterStartDate= new Date(2021,00,17);
                 dt = new Date()
                 month = dt.getMonth();
                 day = dt.getDate();
