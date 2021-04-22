@@ -751,7 +751,15 @@
     <td id="WeekNumber"></td>
     <td style="text-align: left" id="WeekRowDate_14_2"></td>
     <td> <!-- Topics -->
-        Bayes InClass Lab
+        <ul class="no_indent">
+            <li>
+                Bayes InClass Lab
+            </li>
+            <li>
+                <a href="https://canvas.jmu.edu/courses/1775272/modules"> video</a>
+            </li>
+            </li>
+        </ul>
     </td>
     <td> <!-- Readings -->
     </td>
