@@ -6,7 +6,7 @@
     include $commonHeader;
     ?>
     <meta name="description" content="JMU CS444 AI">
-    <title>CS 444 - AI - Spr 2021</title>
+    <title>CS 444 - AI - Spr 2022</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-md-12 align-middle text-center">
                         <h2>CS 444 Artificial Intelligence</h2>
-                        <h2>Spring 2021</h2>
+                        <h2>Spring 2022</h2>
                     </div>
                 </div>
             </div> <!-- jumbotron -->

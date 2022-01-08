@@ -12,9 +12,10 @@ on one of the following environments:
 <h3>Limited MS Windows Support</h3>
 In theory, Python and the required packages <b>should</b> run in a Windows
 environment, however, limited assistance will be available
-for Windows installations.
-<h3> Configuring a Development Environment </h3>
+for Windows installations.  I would recommend installing a VM if you are going
+to use Windows and perform all the activities in this class within that VM.
 
+<h3> Configuring a Development Environment </h3>
 <div style="padding-left:2em;">
 
     This document contains the procedure for building a programming/development
@@ -29,8 +30,7 @@ for Windows installations.
             is above 3.7.  Run the .pkg file that you download and Python should be installed. To run
             this version of Python from the command line, simply type in the python followed by the
             version number, for example:
-            <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">
-                    python3.10</code></pre>
+            <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">python3.10</code></pre>
 
         </div>
 
@@ -39,16 +39,14 @@ for Windows installations.
         <div style="padding-left:2em;">
            Simply use apt-get if you running Ubuntu/Mint 20.
 
-            <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">
-                    sudo apt-get update
+            <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">sudo apt-get update
                     sudo apt-get install python3-distutils python3-pip python3-dev python3-venv
                 </code></pre>
         </div>
         <h4>Install on Windows</h4>
         <div style="padding-left:2em;">
             Just visit <a href="https://python.org">python.org</a> and download the latest version that
-            is above 3.7.  I downloaded the Windows embeddable package (64-bit), unzipped the
-            file, and then I could run the python.exe located in that directory.
+            is above 3.7.
         </div>
 
     </div>
@@ -113,8 +111,7 @@ for Windows installations.
         required packages.
 
         <pre>
-            <code id="pipCommands" class="language-shell" data-lang="bash" style="white-space: pre-line ">
-                pip install --upgrade pip
+            <code id="pipCommands" class="language-shell" data-lang="bash" style="white-space: pre-line ">pip install --upgrade pip
                 pip install wheel
                 pip install setuptools
                 pip install numpy
@@ -156,7 +153,7 @@ for Windows installations.
         Expand the Extensions tree until you find <i>Python</i> and select that.
         Scroll down until you find <i>Default Interpreter Path</i> and plug
         in the path to the bin/python3 file that is within your venv environment.
-        For my configuration, this is: /Users/kmolloy/cs444_p10_venv/bin/python3.
+        For my configuration, this is: <i>/Users/kmolloy/cs444_p10_venv/bin/python3</i>.
 
         When VS Code is correcty configured to use your venv, you should see two things:
         <ol>
@@ -172,8 +169,7 @@ for Windows installations.
 
 
 
-        You can also control where you project
-        files will be kept.  I would strongly recommend storing these files where they will
+        I would strongly recommend storing these files where they will
         be routinely backed up.  When I use a VM, I setup a mount point/directory from
         my Mac (which gets backed up).  I would also recommend using
         GIT (since it will provide another layer of safety and utility).
