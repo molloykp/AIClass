@@ -30,7 +30,7 @@ for Windows installations.
             this version of Python from the command line, simply type in the python followed by the
             version number, for example:
             <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">
-                    python3.7</code></pre>
+                    python3.10</code></pre>
 
         </div>
 
@@ -62,7 +62,7 @@ for Windows installations.
 
         To create a virtual environment, follow these steps:
         <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">cd # places you in your home directory
-                python3.7 -m venv cs444_venv</code></pre>
+                python3.10 -m venv cs444_venv</code></pre>
 
         To activate your virtual environment, execute the following command:
         <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">
@@ -128,44 +128,48 @@ for Windows installations.
                 jupyter nbextension install --sys-prefix --py nbgrader
                 jupyter nbextension enable --user validate_assignment/main --section=notebook
                 jupyter serverextension enable --user nbgrader.server_extensions.validate_assignment
-            </code>
-        </pre>
+            </code></pre>
         <!-- </div> -->
     </div>
 
-    <h4>Install the PyCharm IDE</h4>
+    <h4>Install the Visual Studio IDE</h4>
     <div style="padding-left:2em;">
-        <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> provides a nice language aware editor, a
+        <a href="https://code.visualstudio.com/download">Visual Studio Code</a> provides
+        a nice language aware editor, a
         <a href="https://en.wikipedia.org/wiki/Lint_(software)">linter</a> (something that checks
         your syntax as you type), and a nice debugger.  Other IDE's
         that are popular are <a href="https://www.spyder-ide.org/">Spyder</a> (especially
-        popular with computational biologists), and <a href="https://code.visualstudio.com/">MS Visual Code</a>.
+        popular with computational biologists), and <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>.
 
 
-        This procedure focuses on PyCharm.  To obtain a copy of PyCharm and install it, follow these steps:
+
+        This procedure focuses on VS Code.  After downloading the install/zip file,
+        if you are using a MAC, move the entire <i>Visual Studio Code</i> folder
+        to tbe <i>Applications</i> folder.
+
+        You will need to install the Python extension in VS Code.  To do this,
+        click on the extensions button (on the left side panel the icon that looks
+        like 4 squares with the top right square notched out).
+        You need to select the Python interpreter that VS Code will use.
+        Select the gear icon (bottom left) which helps you manage your extensions.
+        Select <i>settings</i> from this menu.
+        Expand the Extensions tree until you find <i>Python</i> and select that.
+        Scroll down until you find <i>Default Interpreter Path</i> and plug
+        in the path to the bin/python3 file that is within your venv environment.
+        For my configuration, this is: /Users/kmolloy/cs444_p10_venv/bin/python3.
+
+        When VS Code is correcty configured to use your venv, you should see two things:
         <ol>
-            <li> Register for a free version of PyCharm professional.  Visit
-                <a href="https://www.jetbrains.com/student/">
-                    https://www.jetbrains.com/student/</a>.  Typically it takes less than
-                5 minutes for a license to get approved.
-            </li>
-
-            <li>After being approved, create your JetBrains account.  You will need this to register your copy of PyCharm.
-            </li>
-            <li> Download the <b>PROFESSIONAL</b> version of pycharm from
-                <a href="https://www.jetbrains.com/pycharm/download">
-                    https://www.jetbrains.com/pycharm/download</a>.
-                At the welcome screen,  select <i>activate new license with: JetBrains
-                    account</i>
-            </li>
+          <li>The bottom left of the screen will display your interpreter location/name
+              correctly</li>
+          <li>When you start VS Code, the terminal window will show your venv/activate
+              file being source. This is how it looks in my terminal<br/>
+              <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">Kevins-MacBook-Pro:~ kmolloy$ source /Users/kmolloy/cs444_p10_venv/bin/activate
+(cs444_p10_venv) Kevins-MacBook-Pro:~ kmolloy$ </code></pre>
+          </li>
         </ol>
 
-        When first starting PyCharm, you will need to pick an interpreter.  Make sure to pick
-        the virtual environment ($HOME/cs444_venv).  The image below shows where I changed
-        the location and selected to use an existing interpreter
-        (the image says cs445 since I borrowed it from my machine learning class).
 
-        <img src="ubuntu_pycharm_newproject_dialog.png" class="rounded mx-auto" style="display: block;">
 
 
         You can also control where you project
