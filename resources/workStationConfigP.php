@@ -111,7 +111,8 @@ to use Windows and perform all the activities in this class within that VM.
         required packages.
 
         <pre>
-            <code id="pipCommands" class="language-shell" data-lang="bash" style="white-space: pre-line ">pip install --upgrade pip
+            <code id="pipCommands" class="language-shell" data-lang="bash" style="white-space: pre-line ">
+                pip install --upgrade pip
                 pip install wheel
                 pip install setuptools
                 pip install numpy
