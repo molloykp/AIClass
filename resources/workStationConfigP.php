@@ -40,7 +40,7 @@ to use Windows and perform all the activities in this class within that VM.
            Simply use apt-get if you running Ubuntu/Mint 20.
 
             <pre><code class="language-shell" data-lang="bash" style="white-space: pre-line ">sudo apt-get update
-                    sudo apt-get install python3-distutils python3-pip python3-dev python3-venv
+                    sudo apt-get install python3-distutils python3-pip python3-dev python3-venv python3-tk
                 </code></pre>
         </div>
         <h4>Install on Windows</h4>
