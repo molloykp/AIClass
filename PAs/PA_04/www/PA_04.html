@@ -1,0 +1,338 @@
+<style>
+    table.table-bordered {
+        border:2px solid black;
+    }
+    table.table-bordered > tbody > tr > td{
+        border:2px solid black;
+    }
+</style>
+<h2> PA: Reinforcement Learning: Q-Learning and Epsilon Greedy</h2>
+
+<h3> Learning Objectives </h3>
+<i>After completing this activity, students should be able to:</i>
+<ul>
+<li>
+  Utilize Q-Learning to teach a crawler to move and the transitions
+  in the GridWorld
+</li>
+<li>
+    Utilize epsilon greedy inside the Q-Learning framework
+</li>
+</ul>
+
+
+<h3>Partners</h3>
+This assignment may be completed individually or in pairs.
+<b>If you are doing this in pairs, you must notify me at the beginning
+of the project.</b>
+My expectation for pairs is that both members are
+actively involved, and take full responsibility for all aspects
+of the project.  In other words, I expect that you are either
+sitting or virtually together to work, and not that you are splitting
+up tasks to be completed separately.  If both members of the
+group are not able to fully explain the code to me, then
+this does not meet this expectation.
+
+
+<h3>Provided Files</h3>
+<div style="padding-left:2em;">
+Download this zip archive <a href="PA_03/cs444_pa_mdp.zip">cs444_pa_mdp.zip</a> which contains all the
+code and supporting files.  If you have the one from the prior PA, you can use those
+files.
+
+Here is a short summary of what is contained within the
+zip file:
+<table class="table-responsive-sm table-bordered">
+    <col style="width:20%">
+    <col style="width:80%">
+    <tbody>
+    <tr>
+        <td colspan="2"><b>Files you will edit:</b></td>
+    </tr>
+    <tr>
+        <td>qlearningAgents.py</td>
+        <td>Q-learning agents for Gridworld and Crawler.</td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><b>Files you might want to look at:</b></td>
+    </tr>
+    <tr>
+        <td>mdp.py</td>
+        <td>Defines methods on general MDPs.</td>
+    </tr>
+    <tr>
+        <td>learningAgents.py</td>
+        <td>Defines the base classes for <i>ValueEstimationAgent</i>
+        and <i>QLearningAgent</i>, whch your agents will extend</td>
+    </tr>
+    <tr>
+        <td>util.py</td>
+        <td>Utilities, including <i>util.Counter</i>, which is
+        particularly useful for Q-learners</td>
+    </tr>
+    <tr>
+        <td>gridworld.py</td>
+        <td>The gridworld implementation</td>
+    </tr>
+    <tr>
+        <td>featureExtractors.py</td>
+        <td>Classes for extracting features on (state, action) pairs.
+        Used for the approximate Q-learning agent (in
+        <i>qlearningAgents.py</i></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><b>Support files you can ignore:</b></td>
+    </tr>
+    <tr>
+        <td>environment.py</td>
+        <td>Abstract class for general reinforcement learning environments.
+        Used by <i>gridworld</i></td>
+    </tr>
+    <tr>
+        <td>graphicsGridworldDisplay.py</td>
+        <td>Gridworld graphical display</td>
+    </tr>
+    <tr>
+        <td>graphicsUtil.py.py</td>
+        <td>Graphic utility</td>
+    </tr>
+    <tr>
+        <td>textGridworldDisplay</td>
+        <td>plug-in for the gridworld text interface</td>
+    </tr>
+    <tr>
+        <td>crawler.py</td>
+        <td>The crawler code and test harness.  You will run this but do NOT edit.</td>
+    </tr>
+    <tr>
+        <td>graphicsCrawlerDisplay.py</td>
+        <td>GUI for the crawler robot</td>
+    </tr>
+    <tr>
+        <td>autograder.py</td>
+        <td>Project autograder</td>
+    </tr>
+    <tr>
+        <td>testParser.py</td>
+        <td>Parses autograder test and solution files</td>
+
+    </tr>
+    </tbody>
+</table>
+
+<style>
+    code.hlr{font-size:95%;color:#e83e8c;word-break:break-word;border-radius:5px;border:1px solid;}
+</style>
+</div>
+
+
+<h3>Q-Learning</h3>
+<div style="padding-left:2em;">
+<p>
+The value iteration agent that you implemented in the last PA does not actually learn from experience.
+Rather, it ponders its MDP model to arrive at a complete policy before interacting with a real environment.
+When it does interact with the environment, it simply follows the precomputed policy
+(e.g. it becomes a reflex agent).
+This distinction may be subtle in a simulated environment like a Gridword,
+but it’s very important in the real world, where the real MDP <b>T</b> and
+<b>R</b> functions are not available.
+</p>
+
+<p>
+You will now write a Q-learning agent, which does very little on construction,
+but instead learns by trial and error from interactions with the environment through its
+<code class="hlr">update(state, action, nextState, reward)</code> function.
+A stub of a Q-learner is specified in QLearningAgent in qlearningAgents.py,
+and you can select it with the option <i>'-a q'</i>.
+</p>
+
+<p>
+For this portion of the assignment, you must implement the following functions within
+qlearningAgents.py:
+<ul>
+    <li>__init__  (init some class variables that you might need)</li>
+    <li>update</li>
+    <li>computeValueFromQValues</li>
+    <li>getQValue</li>
+    <li>computeActionFromQValues</li>
+</ul>
+
+Note: For <b color="red">computeActionFromQValues</b>, you should break ties randomly for better behavior.
+The <b>random.choice()</b> function will help. In a particular state, actions that your agent
+hasn’t seen before still have a Q-value, specifically a Q-value of zero, and if all of the actions
+that your agent has seen before have a negative Q-value,
+an unseen action may be optimal.
+</p>
+
+<p>
+With the Q-learning update in place, you can watch your Q-learner learn under manual control,
+using the keyboard:
+<pre><code>python gridworld.py -a q -k 5 -m</code></pre>
+</p>
+
+<p>
+Recall that -k will control the number of episodes your agent gets to learn.
+Watch how the agent learns about the state it was just in, not the one it moves to,
+and “leaves learning in its wake.”
+</p>
+
+<p>
+<b>Hint:</b> to help with debugging, you can turn off noise by using the --noise 0.0 parameter
+(though this obviously makes Q-learning less interesting).
+If you manually steer the Gridworld agent north and then east along the optimal path
+for 5 episodes using the following command (with no noise),
+you should see the following Q-values:
+<pre><code>python gridworld.py -a q -k 5 -m --noise 0.0</code></pre>
+<img src="PA_04/gridword_qlearning_5_nonoise.png" style="width:35%">
+</p>
+
+<h4>Testing Your Code</h4>
+You can test your implementation using <i>manually driving around your agent</i> commands
+from above and also using the following autograder command:
+<pre><code>python autograder.py -q q6</code></pre>
+</div>
+
+<h3>Epsilon Greedy</h3>
+<div style="padding-left:2em;">
+<p>
+Complete your Q-learning agent by implementing the <b>epsilon-greedy action selection</b> technique
+in the getAction function.  This means that your agent will choose random actions
+an epsilon fraction of the time, and follows its current best Q-values otherwise.
+Note that choosing a random action may result in choosing the best action - that is,
+you should not choose a random sub-optimal action, but rather <b>any random legal action</b>.
+</p>
+
+<p>
+For this portion of the assignment, you must implement the following functions:
+<ul>
+    <li>getAction</li>
+</ul>
+
+You can choose an element from a list uniformly at random by calling the random.choice function.
+You can simulate a binary variable with probability p of success by using util.flipCoin(p),
+which returns True with probability p and False with probability 1-p.
+</p>
+
+<p>
+After implementing the getAction method, observe the following behavior of the agent in gridworld (with epsilon = 0.3).
+<pre><code>python gridworld.py -a q -k 100</code></pre>
+</p>
+
+<p>
+Your final Q-values should resemble those of your value iteration agent, especially along well-traveled paths.
+However, your average returns will be lower than the Q-values predict because of the random
+actions and the initial learning phase.
+</p>
+
+<p>
+You can also observe the following simulations for different epsilon values.
+Does that behavior of the agent match what you expect?
+<pre><code>python gridworld.py -a q -k 100 --noise 0.0 -e 0.1</code></pre>
+<pre><code>python gridworld.py -a q -k 100 --noise 0.0 -e 0.9</code></pre>
+
+<h4>Training the Crawler</h4>
+
+You should be able to run the crawler simuation:
+<pre><code>python crawler.py</code></pre>
+</p>
+
+<p>
+If this doesn’t work, you’ve probably written some code too specific to the GridWorld problem and you
+should make it more general to all MDPs.
+</p>
+
+<p>
+This command above invokes the crawling robot from class using your Q-learner.
+Play around with the various learning parameters to see how they affect the agent’s policies and actions.
+Note that the step delay is a parameter of the simulation, whereas the learning rate and epsilon
+are parameters of your learning algorithm, and the discount factor is a property of the environment.
+</p>
+
+
+<h4>Testing Your Code</h4>
+You can test your implementation using <i>manually driving around your agent</i> commands
+from above and also using the following autograder command:
+<pre><code>python autograder.py -q q7</code></pre>
+</div>
+
+<h3>Submission and Policies</h3>
+<div style="padding-left:2em;">
+You must submit the following files to Canvas:
+<ul>
+    <li><code class="hlr">qlearningAgents.py</code>
+    </li>
+    <li>YourLastName_QLearning_Report.pdf (where YourLastName is literally your last name)</li>
+</ul>
+
+Your report must contain the following items:
+<ul>
+   <li>A summary of how your <i>crawler</i> learned to work. This should include: <ul>
+       <li>How many steps did it take for it to learn to walk descently</li>
+       <li>What parameters did you use for <i>eps</i>, <i>learning rate</i>.
+       How/when/why did you change them during the learning/simulation</li>
+       <li>A link to a video of your crawler walking.  If you need help creating
+       this, let me know.</li>
+   </ul></li>
+</ul>
+<p>
+    <b>Evaluation:</b>
+    Your code will be autograded for technical correctness. Please do not change the names of any
+    provided functions or classes within the code, or you will wreak havoc on the autograder. However,
+    the correctness of your implementation – not the autograder’s judgements –
+    will be the final judge of your score. If necessary, I will review and grade assignments individually
+    to ensure that you receive due credit for your work.
+</p>
+<p>
+<b>Academic Dishonesty</b>: Your code will be checked
+    against other submissions in the class for logical redundancy. If you copy someone else’s code and submit it with minor changes,
+    it will be detected. These cheat detectors are quite hard to fool, so please don’t try.
+    I trust you all to submit your own team's work; please don’t let us down.
+</p>
+<p>
+    <b>Getting Help:</b> You are not alone! If you find yourself stuck on something, contact me.
+    Office hours and Piazza discussion forum are there for your support; please use them.
+    If you can’t make office hours, let me know and I will schedule a meeting with you. I want these projects to be
+    rewarding and instructional, not frustrating and demoralizing.
+    But, I don’t know when or how to help unless you ask.
+</p>
+
+
+<hr/>
+
+    <div class="row">
+        <div class="col-sm-6">
+    <table class="table table-responsive-sm  table-bordered">
+        <tr>
+            <td>Passes Unit Test q6</td><td> 30%</td>
+        </tr>
+
+        <tr>
+            <td>Passes Unit Test q7</td><td> 40%</td>
+        </tr>
+
+        <tr>
+            <td>Report</td><td> 20%</td>
+        </tr>
+
+        <tr>
+            <td>Coding style</td>
+            <td>10% </td>
+        </tr>
+
+    </table>
+    </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<div style="padding-left:2em;">
+<small>
+    This assignment was developed at the UC-Berkeley by Dan Klein and John
+    DeNero with autograding support from  Brad Miller, Nick Hay, and
+    Pieter Abbeel.
+</small>
